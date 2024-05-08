@@ -1,7 +1,7 @@
 :root {
     --background: #202020;
-    --color-primary: red;
-    --color-secondary: blue;
+    --color-primary: rgb(50, 87, 77);
+    --color-secondary: rgb(82, 103, 138);
 
 }
 
@@ -25,4 +25,8 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.icon {
+    width: 1.5rem;
 }

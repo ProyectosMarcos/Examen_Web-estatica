@@ -1,5 +1,31 @@
-@media(max-width: 768px) {
+@media(width >=360px) and (width < 768px) {
+    body {
+        display: grid;
+        grid-template:
+            "header header" 85px
+            "main main" 1fr
+            "footer footer" 60px
+            / 1fr;
+    }
 
+
+    .header {
+        background-color: var(--background);
+        grid-template-areas: header;
+    }
+
+    .main {
+        grid-area: main;
+        background-color: var(--color-primary);
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: var(--color-secondary);
+    }
+}
+
+@media(width >=768px) {
     body {
         display: grid;
         grid-template:
@@ -11,17 +37,17 @@
 
 
     .header {
-        background-color: #202022;
+        background-color: var(--background);
         grid-template-areas: header;
     }
 
     .main {
         grid-area: main;
-        background-color: blueviolet;
+        background-color: var(--color-primary);
     }
 
     .footer {
         grid-area: footer;
-        background-color: aqua;
+        background-color: var(--color-secondary);
     }
 }

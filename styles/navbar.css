@@ -1,0 +1,206 @@
+/* Resolucion Movil */
+@media(width < 768px) {
+
+    .btn__menu-movil {
+        position: fixed;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        z-index: 999;
+        opacity: 0;
+        left: 1rem;
+        top: 1rem;
+    }
+
+    .btn__burguer {
+        position: fixed;
+        width: 3rem;
+        height: 0.6rem;
+        background-color: #fff;
+        left: 1rem;
+        top: 3.4rem;
+        z-index: 998;
+        border-radius: 0.3rem;
+        transform: rotate(0deg) translate(0, -1.2rem);
+        transition: transform 500ms ease;
+    }
+
+    .btn__burguer::before,
+    .btn__burguer::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 0.6rem;
+        background-color: #fff;
+        border-radius: 0.3rem;
+        transition: transform 500ms ease;
+    }
+
+    .btn__burguer::before {
+        transform: rotate(0deg) translate(0, -0.9rem);
+    }
+
+    .btn__burguer::after {
+        transform: rotate(0deg) translate(0, 0.3rem);
+    }
+
+    .btn__menu-movil:checked+.btn__burguer {
+        background-color: transparent;
+    }
+
+    .btn__menu-movil:checked+.btn__burguer::before {
+        transform: rotate(45deg) translate(0, 0);
+    }
+
+    .btn__menu-movil:checked+.btn__burguer::after {
+        transform: rotate(-45deg) translate(0.5rem, -0.4rem)
+    }
+
+    .navbar__movil {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-right: 12.5rem;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        margin-top: 5.2rem;
+        z-index: 997;
+        background-color: #575758;
+        transform: translate(-100%, 0);
+        transition: transform 500ms ease, background-color 500ms ease;
+    }
+
+    .btn__menu-movil:checked~.navbar__movil {
+        transform: translate(0, 0);
+    }
+
+    .navbar__menu-movil {
+        color: #fff;
+        font-size: 1.5rem;
+        list-style-type: none;
+        position: absolute;
+        top: 7em;
+        flex-direction: row-reverse;
+        flex-direction: column;
+        display: flex;
+        padding: 1em;
+    }
+
+    .computer::before {
+        content: url(../assets/icons/monitoring-svgrepo-com.png);
+
+    }
+
+    .cpu::before {
+        content: url(../assets/icons/ordenador-personal.png);
+    }
+
+    .mouse::before {
+        content: url(../assets/icons/mouse-svgrepo-com.png);
+    }
+
+    .silla::before {
+        content: url(../assets/icons/silla-giratoria.png);
+    }
+
+    .computer::before,
+    .cpu::before,
+    .mouse::before,
+    .silla::before {
+        margin-right: .4.5rem;
+    }
+
+
+    .navbar__links-movil {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    /* Navbar - Header */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1em;
+        color: #fff;
+
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1em;
+    }
+
+    .navbar__menu {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1em;
+    }
+
+    .navbar__links {
+        text-decoration: none;
+        color: #fff;
+        gap: 4em;
+    }
+
+
+
+}
+
+/* Resolucion Desktop */
+@media(width >=768px) {
+    .btn__menu-movil {
+        display: none;
+
+    }
+
+    .btn__burguer {
+        display: none;
+    }
+
+
+
+    .navbar__movil {
+        display: none;
+    }
+
+    /* Navbar - Header */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1em;
+        color: #fff;
+
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .navbar__menu {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1em;
+    }
+
+    .navbar__links {
+        text-decoration: none;
+        color: #fff;
+    }
+}
