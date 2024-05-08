@@ -1,0 +1,27 @@
+@media(max-width: 768px) {
+
+    body {
+        display: grid;
+        grid-template:
+            "header" 85px
+            "main" 1fr
+            "footer" 50px
+            / 1fr;
+    }
+
+
+    .header {
+        background-color: #202022;
+        grid-template-areas: header;
+    }
+
+    .main {
+        grid-area: main;
+        background-color: blueviolet;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: aqua;
+    }
+}
