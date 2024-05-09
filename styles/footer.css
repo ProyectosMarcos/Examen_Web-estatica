@@ -1,5 +1,5 @@
 .contact article {
-    border: solid green thick;
+    /* border: solid green thick; */
     display: grid;
     place-content: center;
 
