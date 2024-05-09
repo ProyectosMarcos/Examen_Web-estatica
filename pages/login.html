@@ -1,46 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#202020" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <title>Examen - Web estatica</title>
   </head>
   <body>
     <header class="header">
-      <picture>
-        <img src="" alt="" />
+      <a href="./index.html">
+        <picture>
+          <img src="" alt="" />
+        </picture>
         <h1>FullTech</h1>
-      </picture>
-      <input type="checkbox" name="" id="" class="btn__menu" />
-      <label for="" class="btn__burguer"></label>
+      </a>
       <nav class="navbar">
         <ul class="navbar__menu">
           <li class="navbar__items">
+            <a href="./login.html" class="navbar__links">
+              <picture>
+                <img
+                  class="icon"
+                  src="/assets/icons/user-solid.png"
+                  alt="user"
+                />
+              </picture>
+              <span>Ingresar</span>
+            </a>
+          </li>
+          <li class="navbar__items">
             <a href="" class="navbar__links">
-              <picture class="icon">
-                <img src="/assets/icons/user-solid.png" alt="" />
+              <picture>
+                <img
+                  class="icon"
+                  src="/assets/icons/magnifying-glass-solid.png"
+                  alt=""
+                />
               </picture>
             </a>
           </li>
           <li class="navbar__items">
-            <a href="" class="navbar__links">{2}</a>
-          </li>
-          <li class="navbar__items">
-            <a href="" class="navbar__links">{3}</a>
-          </li>
-          <li class="navbar__items">
-            <a href="" class="navbar__links">{4}</a>
-          </li>
-          <li class="navbar__items">
-            <a href="" class="navbar__links">{5}</a>
+            <a href="" class="navbar__links">
+              <picture>
+                <img src="../assets/icons/cart-icon.png" alt="" />
+              </picture>
+              <span>Mi carrito</span>
+            </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main">
-      <section></section>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <input type="checkbox" name="" id="" class="btn__menu-movil" />
+    <label for="" class="btn__burguer"></label>
+    <nav class="navbar__movil">
+      <ul class="navbar__menu-movil">
+        <li class="navbar__items-movil">
+          <a href="" class="navbar__links-movil computer">Monitores</a>
+        </li>
+        <li class="navbar__items-movil">
+          <a href="" class="navbar__links-movil cpu">CPU</a>
+        </li>
+        <li class="navbar__items-movil">
+          <a href="" class="navbar__links-movil mouse">Mouse</a>
+        </li>
+        <li class="navbar__items">
+          <a href="" class="navbar__links-movil silla">Sillas</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main background-img">
+      <section class="form">
+        <article class="container__form">
+          <form action="">
+            <h2>Iniciar Sesión</h2>
+            <br />
+            <div class="box">
+              <input type="email" placeholder="Ingresar correo" />
+              <input type="password" placeholder="Ingresar clave" />
+            </div>
+            <div class="info">
+              <a href="">Registrarme</a>
+              <a href="">Olvide mi contraseña</a>
+            </div>
+            <button type="submit">LOGIN</button>
+          </form>
+        </article>
+      </section>
       <section class="contact">
         <article>
           <h3>¡Contactanos!</h3>
@@ -52,7 +100,7 @@
         </article>
         <article class="redes">
           <h3>Seguinos en las Redes</h3>
-          <div class="box">
+          <dix class="box">
             <picture class="instagram">
               <img src="" alt="" />
             </picture>
@@ -62,7 +110,7 @@
             <picture class="youtube">
               <img src="" alt="" />
             </picture>
-          </div>
+          </dix>
         </article>
         <article class="details">
           <h3>Defensa del Consumidor</h3>
@@ -78,5 +126,6 @@
     <footer class="footer">
       <small>footer</small>
     </footer>
+    <script src="../scripts/index.js"></script>
   </body>
 </html>

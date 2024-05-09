@@ -1,6 +1,6 @@
 :root {
     --background: #202020;
-    --color-primary: rgb(50, 87, 77);
+    --color-primary: #054337;
     --color-secondary: rgb(82, 103, 138);
 
 }
@@ -29,4 +29,8 @@ img {
 
 .icon {
     width: 1.5rem;
+}
+
+a {
+    text-decoration: none;
 }
