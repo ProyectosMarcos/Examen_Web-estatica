@@ -60,14 +60,14 @@
         position: fixed;
         top: 0;
         right: 0;
-        margin-right: 12.5rem;
+        margin-right: 11rem;
         bottom: 0;
         left: 0;
         display: flex;
         align-items: center;
         margin-top: 5.2rem;
         z-index: 997;
-        background-color: #2a2a2a;
+        background-color: #181717;
         transform: translate(-100%, 0);
         transition: transform 500ms ease, background-color 500ms ease;
     }

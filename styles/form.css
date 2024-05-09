@@ -1,5 +1,5 @@
 .background-img {
-    background-image: url(../assets/icons/5630974.jpg);
+    background-image: url(../assets/icons/6484470.jpg);
 }
 
 .form {
@@ -71,4 +71,28 @@ form button:nth-of-type(1) {
 form button:nth-of-type(1):active {
     transform: scale(0.9);
     transition: transform 0.1s ease;
+}
+
+
+
+
+
+/**************************/
+/* Register */
+.register p {
+    color: #fff;
+    font-weight: bold;
+}
+
+select {
+    margin-top: 0.5rem;
+    padding: .5em;
+    font-size: 1rem;
+}
+
+input[type="number"],
+input[type="text"] {
+    padding: .5em;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }

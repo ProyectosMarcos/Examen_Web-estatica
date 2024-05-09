@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#202020" />
+        <link rel="stylesheet" href="../styles/index.css" />
+        <title>Examen - Web estatica</title>
+      </head>
+      <body>
+        <header class="header">
+          <a href="./index.html">
+            <picture>
+              <img src="" alt="" />
+            </picture>
+            <h1>FullTech</h1>
+          </a>
+          <nav class="navbar">
+            <ul class="navbar__menu">
+              <li class="navbar__items">
+                <a href="./login.html" class="navbar__links">
+                  <picture>
+                    <img
+                      class="icon"
+                      src="/assets/icons/user-solid.png"
+                      alt="user"
+                    />
+                  </picture>
+                  <span>Ingresar</span>
+                </a>
+              </li>
+              <li class="navbar__items">
+                <a href="" class="navbar__links">
+                  <picture>
+                    <img
+                      class="icon"
+                      src="/assets/icons/magnifying-glass-solid.png"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="navbar__items">
+                <a href="" class="navbar__links">
+                  <picture>
+                    <img src="../assets/icons/cart-icon.png" alt="" />
+                  </picture>
+                  <span>Mi carrito</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <input type="checkbox" name="" id="" class="btn__menu-movil" />
+        <label for="" class="btn__burguer"></label>
+        <nav class="navbar__movil">
+          <ul class="navbar__menu-movil">
+            <li class="navbar__items-movil">
+              <a href="" class="navbar__links-movil computer">Monitores</a>
+            </li>
+            <li class="navbar__items-movil">
+              <a href="" class="navbar__links-movil cpu">CPU</a>
+            </li>
+            <li class="navbar__items-movil">
+              <a href="" class="navbar__links-movil mouse">Mouse</a>
+            </li>
+            <li class="navbar__items">
+              <a href="" class="navbar__links-movil silla">Sillas</a>
+            </li>
+          </ul>
+        </nav>
+
+        <main class="main background-img">
+          <section class="form">
+            <article class="container__form register">
+              <form action="">
+                <h2>¿No estás registrado? Por favor, completá tus datos:</h2>
+                <p>
+                  Recordá que la persona registrada deberá coincidir con los
+                  datos del titular del medio de pago elegido.
+                </p>
+                <br />
+                <div class="box">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="E-Mail"
+                    required
+                  />
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Contraseña"
+                    required
+                  />
+                  <input
+                    type="password"
+                    name="repeatPassword"
+                    placeholder="Ingresar contraseña"
+                    required
+                  />
+                </div>
+                <div class="box">
+                  <select value="options">
+                    <option name="" id="" selected>Consumidor Final</option>
+                    <option name="" id="">Monotributista</option>
+                    <option name="" id="">Responsable Inscripto</option>
+                    <option name="" id="">IVA Exento</option>
+                  </select>
+                </div>
+
+                <div class="box">
+                  <select value="options">
+                    <option name="" id="" selected>DNI</option>
+                  </select>
+                </div>
+
+                <div class="box">
+                  <input
+                    type="number"
+                    name="numero"
+                    placeholder="Número"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Nombre"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="apellido"
+                    placeholder="Apellido"
+                    required
+                  />
+                </div>
+
+                <div
+                  style="
+                    margin-top: 0.5rem;
+                    color: #fff;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    gap: 0.3rem;
+                  "
+                >
+                  <label for="newsletter"
+                    >Quiero recibir ofertas y novedades en mi correo</label
+                  >
+                  <input type="checkbox" name="newsletter" id="newsletter" />
+                </div>
+
+                <div class="info">
+                  <a href="">Registrarme</a>
+                  <a href="">Olvide mi contraseña</a>
+                </div>
+
+                <button type="submit">CONTINUAR</button>
+              </form>
+            </article>
+          </section>
+          <section class="contact">
+            <article>
+              <h3>¡Contactanos!</h3>
+              <address></address>
+            </article>
+            <article>
+              <h3>Nuestros Horarios</h3>
+              <p></p>
+            </article>
+            <article class="redes">
+              <h3>Seguinos en las Redes</h3>
+              <dix class="box">
+                <picture class="instagram">
+                  <img src="" alt="" />
+                </picture>
+                <picture class="facebook">
+                  <img src="" alt="" />
+                </picture>
+                <picture class="youtube">
+                  <img src="" alt="" />
+                </picture>
+              </dix>
+            </article>
+            <article class="details">
+              <h3>Defensa del Consumidor</h3>
+              <p>Ley de defensa del consumidor</p>
+              <p>Conocé tus derechos consumidor</p>
+              <div class="box">
+                <picture><img src="" alt="" /></picture>
+                <picture><img src="" alt="" /></picture>
+              </div>
+            </article>
+          </section>
+        </main>
+        <footer class="footer">
+          <small>footer</small>
+        </footer>
+        <script src="../scripts/index.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
