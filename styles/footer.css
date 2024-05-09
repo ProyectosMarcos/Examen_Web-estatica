@@ -1,0 +1,6 @@
+.contact article {
+    border: solid green thick;
+    display: grid;
+    place-content: center;
+
+}

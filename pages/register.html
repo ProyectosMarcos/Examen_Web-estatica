@@ -163,13 +163,31 @@
 
                 <div class="info">
                   <a href="">Registrarme</a>
-                  <a href="">Olvide mi contraseña</a>
+                  <a href="#" id="openModal">Olvide mi contraseña</a>
                 </div>
 
                 <button type="submit">CONTINUAR</button>
               </form>
             </article>
           </section>
+
+          <dialog id="modal">
+            <button id="closeModal">❎</button>
+            <form action="">
+              <h3>Recuperar contraseña</h3>
+              <p>Ingresa tu email</p>
+              <div class="box">
+                <input
+                  type="email"
+                  name=""
+                  placeholder="Ingresar correo"
+                  id=""
+                />
+              </div>
+              <button type="submit">Recuperar contraseña</button>
+            </form>
+          </dialog>
+
           <section class="contact">
             <article>
               <h3>¡Contactanos!</h3>
@@ -207,7 +225,7 @@
         <footer class="footer">
           <small>footer</small>
         </footer>
-        <script src="../scripts/index.js"></script>
+        <script src="../scripts/index.js" type="module"></script>
       </body>
     </html>
   </body>
