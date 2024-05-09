@@ -1,4 +1,4 @@
-@media(max-width: 768px) {
+@media(width < 768px) {
 
     body {
         display: grid;
@@ -6,22 +6,32 @@
             "header" 85px
             "main" 1fr
             "footer" 50px
-            / 1fr;
+            
+    }
+    
+    .header img {
+        width: 80px; 
+        height: auto;
+        border-radius: 50%;
+        transform: translateX(5rem);
+        
     }
 
-
     .header {
-        background-color: #202022;
+        background-color: #000000;
         grid-template-areas: header;
     }
 
     .main {
         grid-area: main;
-        background-color: blueviolet;
+        background-color: #3b4042;
     }
 
     .footer {
         grid-area: footer;
-        background-color: aqua;
+        background-color: greenyellow;
+    }
+    .logo img {
+        transform: translateX(-10px);
     }
 }
