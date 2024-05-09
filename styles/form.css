@@ -105,9 +105,9 @@ input[type="text"] {
 /* Recuperar contraseña */
 
 #modal {
-    position: absolute;
-    top: 15rem;
-    left: 15rem;
+    position: fixed;
+    margin: 0 auto;
+    transform: translate(0, 100%);
     width: 30rem;
     background-color: rgba(0, 0, 0, 0.975);
     padding: .5em;
