@@ -74,7 +74,7 @@
     align-items: center;
     z-index: 997;
     box-shadow: 10px 0px 30px 10px rgba(135, 255, 114, 0.204);
-    background-color: #00000098;
+    background-color: #000000;
     transform: translate(-120%, 0);
     transition: transform 200ms ease-in-out;
 }
@@ -103,3 +103,4 @@
     color: #ffffff;
     transition: ease-in 0.2s;
 }
+
