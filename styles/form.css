@@ -111,6 +111,8 @@ input[type="text"] {
     width: 30rem;
     background-color: rgba(0, 0, 0, 0.975);
     padding: .5em;
+    border: thin solid aqua;
+
 }
 
 #modal h3,
@@ -130,4 +132,55 @@ p {
 #closeModal {
     all: unset;
     cursor: pointer;
+}
+
+/**************************/
+
+.modalSearch {
+    position: fixed;
+    margin: 0 auto;
+    transform: translate(0, 100%);
+    width: 30rem;
+    background-color: rgba(0, 0, 0, 0.975);
+    padding: .5em;
+    border: thin solid aqua;
+}
+
+input[type="search"] {
+    padding: .6em;
+    width: 15rem;
+}
+
+input[type="search"]::placeholder {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.closeModalSearch {
+    all: unset;
+    width: max-content;
+}
+
+.formSearch {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    width: auto;
+    background-color: rgba(37, 36, 36, 0.608);
+    border: thin solid aqua;
+
+}
+
+
+.formSearch>.search {
+    width: cover;
+    border: thin solid aqua;
+    cursor: pointer;
+    all: unset;
+    cursor: pointer;
+}
+
+.formSearch>.search:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
 }

@@ -24,13 +24,13 @@
                   src="/assets/icons/user-solid.png"
                   alt="user"
                 />
-                <span>Ingresar</span>
+                <span id="">Ingresar</span>
               </a>
             </picture>
           </li>
           <li class="navbar__items">
             <picture>
-              <a href="" class="navbar__links">
+              <a href="#" id="openModal" class="navbar__links">
                 <img
                   class="icon"
                   src="/assets/icons/magnifying-glass-solid.png"
@@ -39,6 +39,7 @@
               </a>
             </picture>
           </li>
+
           <li class="navbar__items">
             <picture>
               <a href="" class="navbar__links">
@@ -50,6 +51,22 @@
         </ul>
       </nav>
     </header>
+
+    <dialog id="modal" class="modal">
+      <form action="" class="formSearch">
+        <button id="closeModal" class="closeModal">❎</button>
+        <div>
+          <input type="search" name="" placeholder="Buscar" id="" />
+        </div>
+        <button class="search" type="submit">
+          <img
+            class="icon"
+            src="../assets/icons/magnifying-glass-solid.png"
+            alt=""
+          />
+        </button>
+      </form>
+    </dialog>
 
     <input type="checkbox" name="" id="" class="btn__menu-movil" />
     <label for="" class="btn__burguer"></label>
