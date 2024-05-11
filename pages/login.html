@@ -30,7 +30,7 @@
           </li>
           <li class="navbar__items">
             <picture>
-              <a href="" class="navbar__links">
+              <a href="#" id="openModalSearch" class="navbar__links">
                 <img
                   class="icon"
                   src="/assets/icons/magnifying-glass-solid.png"
@@ -70,6 +70,22 @@
       </ul>
     </nav>
 
+    <dialog id="modalSearch" class="modalSearch">
+      <form action="" class="formSearch">
+        <button id="closeModalSearch" class="closeModalSearch">❎</button>
+        <div>
+          <input type="search" name="" placeholder="Buscar" id="searchInput" />
+        </div>
+        <button type="submit" class="searchButton">
+          <img
+            class="icon"
+            src="../assets/icons/magnifying-glass-solid.png"
+            alt=""
+          />
+        </button>
+      </form>
+    </dialog>
+
     <main class="main background-img">
       <section class="form">
         <article class="container__form">
@@ -94,7 +110,7 @@
               <a href="./register.html">Registrarme</a>
               <a id="openModal" href="#">Olvide mi contraseña</a>
             </div>
-            <button type="submit">LOGIN</button>
+            <button type="submit" class="loginButton">LOGIN</button>
           </form>
         </article>
       </section>
@@ -105,9 +121,16 @@
           <h3>Recuperar contraseña</h3>
           <p>Ingresa tu email</p>
           <div class="box">
-            <input type="email" name="" placeholder="Ingresar correo" id="" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Ingresar correo"
+              id=""
+            />
           </div>
-          <button type="submit">Recuperar contraseña</button>
+          <button type="submit" class="passwordBtn">
+            Recuperar contraseña
+          </button>
         </form>
       </dialog>
 

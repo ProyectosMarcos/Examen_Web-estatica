@@ -71,6 +71,7 @@
         background-color: #181717aa;
         border: thin solid aqua;
         border-left-color: black;
+        border-right-color: black;
         transform: translate(-100%, 0);
         transition: transform 500ms ease, background-color 500ms ease;
     }

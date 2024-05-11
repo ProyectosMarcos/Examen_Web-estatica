@@ -29,8 +29,8 @@
             </picture>
           </li>
           <li class="navbar__items">
-            <picture>
-              <a href="#" id="openModal" class="navbar__links">
+            <picture id="openModalSearch">
+              <a href="#" class="navbar__links">
                 <img
                   class="icon"
                   src="/assets/icons/magnifying-glass-solid.png"
@@ -52,13 +52,13 @@
       </nav>
     </header>
 
-    <dialog id="modal" class="modal">
+    <dialog id="modalSearch" class="modalSearch">
       <form action="" class="formSearch">
-        <button id="closeModal" class="closeModal">❎</button>
+        <button id="closeModalSearch" class="closeModalSearch">❎</button>
         <div>
-          <input type="search" name="" placeholder="Buscar" id="" />
+          <input type="search" name="" placeholder="Buscar" id="searchInput" />
         </div>
-        <button class="search" type="submit">
+        <button type="submit" class="searchButton">
           <img
             class="icon"
             src="../assets/icons/magnifying-glass-solid.png"
@@ -127,6 +127,6 @@
     <footer class="footer">
       <small>footer</small>
     </footer>
-    <script src="../scripts/index.js" type="module"></script>
+    <script src="../scripts/modalSearch.js"></script>
   </body>
 </html>

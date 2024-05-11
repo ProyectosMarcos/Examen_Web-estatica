@@ -59,7 +59,11 @@ input[type="password"]::placeholder {
     font-weight: bold;
 }
 
-form button:nth-of-type(1) {
+
+
+.btnContinue,
+.loginButton,
+.passwordBtn {
     width: 100%;
     padding: .4em;
     font-size: 1rem;
@@ -139,11 +143,14 @@ p {
 .modalSearch {
     position: fixed;
     margin: 0 auto;
-    transform: translate(0, 100%);
-    width: 30rem;
+    transform: translate(0, 250%);
     background-color: rgba(0, 0, 0, 0.975);
     padding: .5em;
     border: thin solid aqua;
+}
+
+.modalSearch::backdrop {
+    background-color: rgba(37, 36, 36, 0.852)
 }
 
 input[type="search"] {
@@ -151,15 +158,20 @@ input[type="search"] {
     width: 15rem;
 }
 
+
 input[type="search"]::placeholder {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.closeModalSearch {
+.closeModalSearch,
+.searchButton {
     all: unset;
-    width: max-content;
+    cursor: pointer;
 }
+
+
+
 
 .formSearch {
     display: flex;
@@ -168,19 +180,10 @@ input[type="search"]::placeholder {
     width: auto;
     background-color: rgba(37, 36, 36, 0.608);
     border: thin solid aqua;
-
 }
 
 
-.formSearch>.search {
-    width: cover;
-    border: thin solid aqua;
-    cursor: pointer;
-    all: unset;
-    cursor: pointer;
-}
-
-.formSearch>.search:active {
+.formSearch>.searchButton:active {
     transform: scale(0.9);
     transition: transform 0.1s ease;
 }
