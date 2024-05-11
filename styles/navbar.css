@@ -60,7 +60,6 @@
         position: fixed;
         top: 0;
         right: 0;
-        /* margin-right: 11rem; */
         margin-right: 52%;
         bottom: 0;
         left: 0;
@@ -68,7 +67,7 @@
         align-items: center;
         margin-top: 5.4rem;
         z-index: 997;
-        background-color: #181717aa;
+        background-color: var(--background);
         border: thin solid aqua;
         border-left-color: black;
         border-right-color: black;
