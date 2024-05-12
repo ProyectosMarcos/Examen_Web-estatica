@@ -1,18 +1,20 @@
 .carousel {
     width: 100%;
-    height: 50vh;
-    border: thin solid aquamarine;
-    background-color: rgb(36, 37, 37);
+    height: max-content;
+    background-color: rgb(116, 187, 187);
     overflow-x: hidden;
     display: flex;
     position: relative;
+    border: thick solod red;
 }
+
 
 .carousel__container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 100%);
     transition: transform 0.5s ease;
+    overflow: x hidden;
 }
 
 .carousel__slide {
@@ -20,6 +22,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    border: thin solid red;
 
 }
 

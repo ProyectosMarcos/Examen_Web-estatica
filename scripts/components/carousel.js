@@ -18,7 +18,7 @@ export function carousel() {
     container.style.transform = `translateX(${percent}%)`;
   };
 
-  let interval = setInterval(nextSlide, 7000);
+  let interval = setInterval(nextSlide, 10000);
 
   radios.forEach((radio, index) => {
     radio.addEventListener('change', () => {
