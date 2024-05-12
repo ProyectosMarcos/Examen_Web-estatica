@@ -1,0 +1,82 @@
+.products h2 {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 1em;
+}
+
+.container__products {
+    border: thin solid aqua;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 1em;
+    margin-right: 1em;
+    background-color: #0000009e;
+    padding: .5em;
+}
+
+@media(max-width: 931px) {
+
+    .container__products {
+        border: thin solid aqua;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+}
+
+.productos__box {
+    background-color: #000000;
+    color: #fff;
+    padding: 1em;
+    cursor: pointer;
+    width: 52%;
+}
+
+.productos__box:hover {
+    border: thin solid aqua;
+}
+
+.productos__box figcaption {
+    font-weight: bold;
+    text-align: center;
+}
+
+.btnProducts {
+    all: unset;
+    background-color: rgb(28, 225, 67);
+    color: #161616;
+    border-radius: .1rem;
+    margin-top: .5em;
+    padding: .3em;
+    width: 40%;
+    cursor: pointer;
+
+}
+
+.price {
+    background-color: rgb(5, 6, 6);
+    border: thin solid aqua;
+    color: #3b3434;
+    border-radius: .1rem;
+    margin-top: 1em;
+    padding: .1em;
+    width: 100%;
+    text-align: center;
+
+}
+
+.gabinete-price {
+    margin-top: 2em;
+}
+
+/***********/
+.container__brands {
+    background-color: rgba(120, 72, 72, 0.604);
+    display: flex;
+    margin-top: 1em;
+    border: thin solid rgb(17, 17, 17);
+    width: 100%;
+}
