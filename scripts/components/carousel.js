@@ -24,7 +24,7 @@ export function carousel() {
     radio.addEventListener('change', () => {
       currentIndex = index;
       clearInterval(interval);
-      interval = setInterval(nextSlide, 3000);
+      interval = setInterval(nextSlide, 5000);
     });
   });
 }
