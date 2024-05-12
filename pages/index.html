@@ -1,173 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#202020" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Examen - Web estatica</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#202020" />
-  <link rel="stylesheet" href="../styles/index.css" />
-  <title>Examen - Web estatica</title>
-</head>
+  <body>
+    <header class="header">
+      <picture class="logo">
+        <a href="./index.html">
+          <img src="../assets/icons/logo-7.png" alt="logo FullTech" />
+        </a>
+      </picture>
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__items">
+            <picture>
+              <a href="./login.html" class="navbar__links">
+                <img
+                  class="icon"
+                  src="/assets/icons/user-solid.png"
+                  alt="user"
+                />
+                <span id="">Ingresar</span>
+              </a>
+            </picture>
+          </li>
+          <li class="navbar__items">
+            <picture id="openModalSearch">
+              <a href="#" class="navbar__links">
+                <img
+                  class="icon"
+                  src="/assets/icons/magnifying-glass-solid.png"
+                  alt=""
+                />
+              </a>
+            </picture>
+          </li>
 
-<body>
-  <header class="header">
-    <picture class="logo">
-      <a href="./index.html">
-        <img src="../assets/icons/logo-7.png" alt="logo FullTech" />
-      </a>
-    </picture>
-    <nav class="navbar">
-      <ul class="navbar__menu">
-        <li class="navbar__items">
-          <picture>
-            <a href="./login.html" class="navbar__links">
-              <img class="icon" src="/assets/icons/user-solid.png" alt="user" />
-              <span id="">Ingresar</span>
-            </a>
-          </picture>
+          <li class="navbar__items">
+            <picture>
+              <a href="" class="navbar__links">
+                <img src="../assets/icons/cart-icon.png" alt="" />
+                <span>Mi carrito</span>
+              </a>
+            </picture>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <dialog id="modalSearch" class="modalSearch">
+      <form action="" class="formSearch">
+        <button id="closeModalSearch" class="closeModalSearch">❎</button>
+        <div>
+          <input type="search" name="" placeholder="Buscar" id="searchInput" />
+        </div>
+        <button type="submit" class="searchButton">
+          <img
+            class="icon"
+            src="../assets/icons/magnifying-glass-solid.png"
+            alt=""
+          />
+        </button>
+      </form>
+    </dialog>
+
+    <input type="checkbox" name="" id="" class="btn__menu-movil" />
+    <label for="" class="btn__burguer"></label>
+    <nav class="navbar__movil">
+      <ul class="navbar__menu-movil">
+        <li class="navbar__items-movil">
+          <a href="" class="navbar__links-movil computer">Monitores</a>
+        </li>
+        <li class="navbar__items-movil">
+          <a href="" class="navbar__links-movil cpu">CPU</a>
+        </li>
+        <li class="navbar__items-movil">
+          <a href="" class="navbar__links-movil mouse">Mouse</a>
         </li>
         <li class="navbar__items">
-          <picture id="openModalSearch">
-            <a href="#" class="navbar__links">
-              <img class="icon" src="/assets/icons/magnifying-glass-solid.png" alt="" />
-            </a>
-          </picture>
-        </li>
-
-        <li class="navbar__items">
-          <picture>
-            <a href="" class="navbar__links">
-              <img src="../assets/icons/cart-icon.png" alt="" />
-              <span>Mi carrito</span>
-            </a>
-          </picture>
+          <a href="" class="navbar__links-movil silla">Sillas</a>
         </li>
       </ul>
     </nav>
-  </header>
 
-  <dialog id="modalSearch" class="modalSearch">
-    <form action="" class="formSearch">
-      <button id="closeModalSearch" class="closeModalSearch">❎</button>
-      <div>
-        <input type="search" name="" placeholder="Buscar" id="searchInput" />
-      </div>
-      <button type="submit" class="searchButton">
-        <img class="icon" src="../assets/icons/magnifying-glass-solid.png" alt="" />
-      </button>
-    </form>
-  </dialog>
-
-  <input type="checkbox" name="" id="" class="btn__menu-movil" />
-  <label for="" class="btn__burguer"></label>
-  <nav class="navbar__movil">
-    <ul class="navbar__menu-movil">
-      <li class="navbar__items-movil">
-        <a href="" class="navbar__links-movil computer">Monitores</a>
-      </li>
-      <li class="navbar__items-movil">
-        <a href="" class="navbar__links-movil cpu">CPU</a>
-      </li>
-      <li class="navbar__items-movil">
-        <a href="" class="navbar__links-movil mouse">Mouse</a>
-      </li>
-      <li class="navbar__items">
-        <a href="" class="navbar__links-movil silla">Sillas</a>
-      </li>
-    </ul>
-  </nav>
-
-  <main class="main background-img">
-    <section class="carousel">
-      <div class="carousel__container">
-        <article class="carousel__slide">
-          <div class="carousel__slide-content">
-            <img src="../assets/img_carousel/1.png" alt="" />
-          </div>
-        </article>
-        <article class="carousel__slide">
-          <div class="carousel__slide-content">
-            <img src="../assets/img_carousel/2.gif" alt="" />
-          </div>
-        </article>
-        <article class="carousel__slide">
-          <div class="carousel__slide-content">
-            <img src="../assets/img_carousel/1_res.JPG" alt="" />
-          </div>
-        </article>
-        <article class="carousel__slide">
-          <div class="carousel__slide-content">
-            <img src="../assets/img_carousel/2_res.JPG" alt="" />
-          </div>
-        </article>
-        <article class="carousel__slide">
-          <div class="carousel__slide-content">
-            <img src="../assets/img_carousel/3_res.JPG" alt="" />
-          </div>
-        </article>
-        <article class="carousel__slide">
-          <div class="carousel__slide-content">
-            <img src="../assets/img_carousel/4_res.JPG" alt="" />
-          </div>
-        </article>
-      </div>
-
-    </section>
-    <div class="buttons">
-      <input type="radio" name="slider" id="slide1" checked />
-      <input type="radio" name="slider" id="slide2" />
-      <input type="radio" name="slider" id="slide3" />
-      <input type="radio" name="slider" id="slide4" />
-      <input type="radio" name="slider" id="slide5" />
-      <input type="radio" name="slider" id="slide6" />
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-      <label for="slide3"></label>
-      <label for="slide4"></label>
-      <label for="slide5"></label>
-      <label for="slide6"></label>
-    </div>
-
-
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <section class="contact">
-      <article>
-        <h3>¡Contactanos!</h3>
-        <address></address>
-      </article>
-      <article>
-        <h3>Nuestros Horarios</h3>
-        <p></p>
-      </article>
-      <article class="redes">
-        <h3>Seguinos en las Redes</h3>
-        <dix class="box">
-          <picture class="instagram">
-            <img src="" alt="" />
-          </picture>
-          <picture class="facebook">
-            <img src="" alt="" />
-          </picture>
-          <picture class="youtube">
-            <img src="" alt="" />
-          </picture>
-        </dix>
-      </article>
-      <article class="details">
-        <h3>Defensa del Consumidor</h3>
-        <p>Ley de defensa del consumidor</p>
-        <p>Conocé tus derechos consumidor</p>
-        <div class="box">
-          <picture><img src="" alt="" /></picture>
-          <picture><img src="" alt="" /></picture>
+    <main class="main background-img">
+      <section class="carousel">
+        <div class="carousel__container">
+          <article class="carousel__slide">
+            <div class="carousel__slide-content">
+              <img src="../assets/img_carousel/1.png" alt="" />
+            </div>
+          </article>
+          <article class="carousel__slide">
+            <div class="carousel__slide-content">
+              <img src="../assets/img_carousel/2.gif" alt="" />
+            </div>
+          </article>
+          <article class="carousel__slide">
+            <div class="carousel__slide-content">
+              <img src="../assets/img_carousel/1_res.JPG" alt="" />
+            </div>
+          </article>
+          <article class="carousel__slide">
+            <div class="carousel__slide-content">
+              <img src="../assets/img_carousel/2_res.JPG" alt="" />
+            </div>
+          </article>
+          <article class="carousel__slide">
+            <div class="carousel__slide-content">
+              <img src="../assets/img_carousel/3_res.JPG" alt="" />
+            </div>
+          </article>
+          <article class="carousel__slide">
+            <div class="carousel__slide-content">
+              <img src="../assets/img_carousel/4_res.JPG" alt="" />
+            </div>
+          </article>
         </div>
-      </article>
-    </section>
-  </main>
-  <footer class="footer">
-    <small>footer</small>
-  </footer>
-  <script src="../scripts/scripts_home.js" type="module"></script>
-</body>
+      </section>
+      <div class="buttons">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <input type="radio" name="slider" id="slide5" />
+        <input type="radio" name="slider" id="slide6" />
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+        <label for="slide5"></label>
+        <label for="slide6"></label>
+      </div>
 
+      <br /><br /><br /><br />
+
+      <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
+      <section class="contact">
+        <article>
+          <h3>¡Contactanos!</h3>
+          <address></address>
+        </article>
+        <article>
+          <h3>Nuestros Horarios</h3>
+          <p></p>
+        </article>
+        <article class="redes">
+          <h3>Seguinos en las Redes</h3>
+          <dix class="box">
+            <picture class="instagram">
+              <img src="" alt="" />
+            </picture>
+            <picture class="facebook">
+              <img src="" alt="" />
+            </picture>
+            <picture class="youtube">
+              <img src="" alt="" />
+            </picture>
+          </dix>
+        </article>
+        <article class="details">
+          <h3>Defensa del Consumidor</h3>
+          <p>Ley de defensa del consumidor</p>
+          <p>Conocé tus derechos consumidor</p>
+          <div class="box">
+            <picture><img src="" alt="" /></picture>
+            <picture><img src="" alt="" /></picture>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <small>footer</small>
+    </footer>
+    <script src="../scripts/scripts_home.js" type="module"></script>
+  </body>
 </html>
