@@ -60,7 +60,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        margin-right: 52%;
+        margin-right: 50%;
         bottom: 0;
         left: 0;
         display: flex;
@@ -88,7 +88,7 @@
         flex-direction: row-reverse;
         flex-direction: column;
         display: flex;
-        padding: 1em;
+        padding: .2em;
     }
 
     .computer::before {

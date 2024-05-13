@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 
-.contact article h3 {
+.contact article h4 {
     color: rgb(7, 255, 222);
 }
 
@@ -20,13 +20,14 @@
     font-weight: bold;
     text-wrap: wrap;
 }
-.footer{
+
+.footer {
     position: relative;
 }
 
 @media(max-width: 436px) {
 
-    .contact h3,
+    .contact h4,
     p {
         font-size: 1rem;
     }
