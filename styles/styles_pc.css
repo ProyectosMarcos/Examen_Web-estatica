@@ -119,9 +119,9 @@
 /****************/
 @media(width >768px) {
 
-    .pc {
-        display: flex;
-        justify-content: center;
+    .pc  {
+        width: 90%;
+        margin: 0 auto;
 
     }
 
@@ -130,7 +130,7 @@
         color: white;
         margin-top: 2em;
         width: 100%;
-        position: relative;
+
     }
 
 
