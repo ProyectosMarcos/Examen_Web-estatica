@@ -1,0 +1,145 @@
+.slider-container {
+    padding-top: 6.25em;
+    color: #fafafa;
+}
+
+.slider {
+    max-width: 100vw;
+    height: 28pc;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img {
+    height: 100%;
+    object-fit: fill;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(153, 205, 50, 0.508);
+    color: #fff;
+    border: none;
+    font-size: 10px;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #150b0b;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #1cce39;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+.buttons {
+    display: flex;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .slider {
+        padding-top: 100px;
+        height: 15pc;
+    }
+
+    .slider .buttons button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slider .dots {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .slider {
+        padding-top: 100px;
+        height: 13rem;
+    }
+
+    .slider .buttons button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .slider .dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider {
+        padding-top: 100px;
+        height: 5pc;
+    }
+
+    .slider .buttons button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slider .dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .slider {
+        padding-top: 100px;
+        height: 3pc;
+    }
+
+    .slider .buttons button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slider .dots {
+        display: none;
+    }
+}

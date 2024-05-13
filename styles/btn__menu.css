@@ -24,7 +24,6 @@
 
 .btn__burguer::before,
 .btn__burguer::after {
-
     content: "";
     display: block;
     width: 100%;
@@ -35,12 +34,10 @@
 }
 
 .btn__burguer::before {
-
     transform: rotate(0deg) translate(0, -0.9rem);
 }
 
 .btn__burguer::after {
-
     transform: rotate(0deg) translate(0, 0.3rem);
 }
 
@@ -54,15 +51,13 @@
 }
 
 .btn__menu:checked+.btn__burguer::after {
-
     transform: rotate(-45deg) translate(0.5rem, -0.4rem)
 }
 
 .navbar {
-
-    width: 270px;
+    width: 15em;
     position: fixed;
-    top: 6rem;
+    top: 7em;
     right: 0;
     bottom: 0;
     left: 0;
@@ -74,32 +69,41 @@
     align-items: center;
     z-index: 997;
     box-shadow: 10px 0px 30px 10px rgba(135, 255, 114, 0.204);
-    background-color: #00000098;
-    transform: translate(-120%, 0);
+    background-color: #000000;
+    transform: translate(-100%, 0);
     transition: transform 200ms ease-in-out;
 }
 
 .btn__menu:checked~.navbar {
-
     transform: translate(0, 0);
 }
 
 .navbar__menu {
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     list-style-type: none;
 }
+
 .navbar__links {
     text-decoration: none;
-    font-size: 15px;
-
+    font-size: 1rem;
     color: #fff;
 }
 
 .navbar__links:hover {
     border-left: 5px solid greenyellow;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     color: #ffffff;
     transition: ease-in 0.2s;
+}
+
+.navbar__items {
+    width: 7rem;
+    text-align: center;
+    transition: transform ease-in-out 0.2s;
+}
+
+.navbar__items:hover {
+    transform: translateX(5px);
 }
