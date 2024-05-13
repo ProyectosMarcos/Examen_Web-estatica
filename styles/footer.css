@@ -1,5 +1,6 @@
 .contact {
     display: flex;
+    justify-content: center;
     gap: 1em;
     padding: .5em;
     background-color: #454445d6;
