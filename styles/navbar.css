@@ -122,8 +122,57 @@
         display: flex;
         align-items: center;
         padding: .3em;
+        position: relative;
 
     }
+
+    /********************/
+
+    .submenu {
+        display: none;
+    }
+
+
+    .toggle-submenu:checked+.submenu {
+        display: block;
+    }
+
+
+    .toggle-submenu {
+        display: none;
+    }
+
+
+
+
+    .submenu {
+        background-color: #131313ea;
+        position: fixed;
+        z-index: 999;
+        transition: z-index 1s ease;
+        top: 0em;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        list-style-type: none;
+        display: none;
+    }
+
+    .submenu__item {
+        padding: .1em;
+        font-size: 1.1rem;
+    }
+
+    .submenu__link {
+        color: #fff;
+    }
+
+    .icon-submenu {
+        width: 1.2rem;
+    }
+
+
+
 
 
     /* Navbar - Header */
