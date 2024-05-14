@@ -26,4 +26,4 @@ function reloadSlider() {
 
     clearInterval(refreshInterval);
     refreshInterval = setInterval(() => { next.click() }, 3000);
-}
+} 

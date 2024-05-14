@@ -1,5 +1,5 @@
 .shop {
-	background-color: #5c3bb6;
+	background-color: #5c3bb66d;
 	padding-top: 3rem;
 	color: white;
 	padding-bottom: 2em;
@@ -168,7 +168,7 @@ header {
 }
 
 .main {
-	background-color: #5c3bb6;
+	background-color: #5c3bb615;
 }
 
 .container__brands {
@@ -191,7 +191,7 @@ header {
 .header-buttons {
 	display: flex;
 	justify-content: space-between;
-	transform: translateX(-1em);
+	transform: translateX(-6em);
 }
 
 .header-buttons h5 {
@@ -202,19 +202,9 @@ header {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	align-content: stretch;
+	
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
 }
 
-.contact .redes picture:hover {
-	box-shadow: 1px 1px 10px 3px #ffffff;
-	transform: scale(1.09);
-	transition: ease-in .2s;
-}
-
-.gg-facebook:hover {
-	color: #fafafa;
-	text-decoration: none;
-}

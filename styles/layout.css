@@ -27,17 +27,14 @@
     font-size: 60px;
 }
 
-.logo {
-    margin-left: 2em;
-    background-color: #000000;
-    transform: translateX(3em);
-}
+
 .shop h1 {
     font-size: 60px;
 }
 .logo {
-    padding-left: 50%;
-    margin-bottom: 10px;
+    display: flex;
+ 
+
     background-color: #000000;
 }
 .logo img {
@@ -67,11 +64,36 @@
     width: 5rem;
 }
 
-@media(width < 768px) {
+@media(width > 468px) {
 
     .logo {
         display: inline-block;
-        transform: translateX(35%);
+      padding-right: 4em;
         background-color: #000000;
+        display: inline-block;
+        padding-right: 6em;
+        margin-right: 1em;
+        padding-left: 6em;
     } 
 }
+
+@media (max-width: 468px) {
+    .header-buttons {
+      display: flex;
+      justify-content: end;
+      padding-left: .5em;
+      
+    }
+    .header-buttons div:nth-child(1) {
+      display: none; /* Oculta el botón de Registro */
+    }
+    .header-buttons div:nth-child(3) {
+    
+    }
+    .logo{
+        display: inline-block;
+        padding-right: 6em;
+        margin-right: 1em;
+        padding-left: 4em;
+    }
+  }

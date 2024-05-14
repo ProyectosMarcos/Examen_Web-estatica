@@ -39,6 +39,24 @@
     width: 2rem;
     height: 2rem;
 }
+.contact .redes picture:hover {
+	box-shadow: 1px 1px 10px 3px #ffffff;
+	transform: scale(1.09);
+	transition: ease-in .2s;
+}
+
+.gg-facebook:hover {
+	color: #fafafa;
+	text-decoration: none;
+}
+.gg-youtube:hover {
+	color: #fafafa;
+	text-decoration: none;
+}
+.gg-instagram:hover {
+	color: #fafafa;
+	text-decoration: none;
+}
 
 .footer {
     text-align: center;
