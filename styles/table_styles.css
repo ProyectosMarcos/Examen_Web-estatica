@@ -32,3 +32,9 @@ td {
     border-bottom: thick solid rgb(20, 167, 167);
     width: 50%;
 }
+
+
+
+td {
+    font-size: 1rem;
+}
