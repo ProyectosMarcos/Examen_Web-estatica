@@ -2,7 +2,7 @@
     background-image: url(../assets/icons/6484470.jpg);
 }
 
-.form {
+.form__section {
     display: flex;
     justify-content: center;
     margin-top: 10%;

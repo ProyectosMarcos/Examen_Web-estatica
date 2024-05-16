@@ -1,5 +1,5 @@
 /* Resolucion Movil */
-@media(width >=360px) {
+@media(width <=768px) {
 
     .btn__menu-movil {
         position: fixed;
@@ -85,10 +85,10 @@
         list-style-type: none;
         position: absolute;
         top: 3em;
-        flex-direction: row-reverse;
-        flex-direction: column;
         display: flex;
+        flex-direction: column;
         padding: .2em;
+
     }
 
     .computer::before {
@@ -108,6 +108,11 @@
         content: url(../assets/icons/silla-giratoria.png);
     }
 
+    .user::before {
+        content: url(../assets/icons/user-solid.png);
+    }
+
+    .user::before,
     .computer::before,
     .cpu::before,
     .mouse::before,
@@ -115,6 +120,9 @@
         margin-right: .4rem;
     }
 
+    .navbar__links {
+        display: flex;
+    }
 
     .navbar__links-movil {
         text-decoration: none;
@@ -172,15 +180,11 @@
     }
 
 
-
-
-
     /* Navbar - Header */
     .header {
         display: flex;
         align-items: center;
         justify-content: space-around;
-
         gap: 1em;
         color: #fff;
     }
@@ -224,10 +228,128 @@
         font-size: 1.2rem;
     }
 
-    /* 
-    .navbar__links span {
+
+    /* .navbar__links span {
         display: none;
     } */
+
+}
+
+
+
+/* Resolucion Desktop */
+@media(width >768px) {
+
+    /* Navbar - Header */
+    .header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1em;
+        color: #fff;
+    }
+
+    .header .navbar__links {
+        color: #fff
+    }
+
+    .navbar {
+        display: flex;
+        position: relative;
+        font-weight: bold;
+    }
+
+    .navbar__menu {
+        display: flex;
+        list-style-type: none;
+        position: relative;
+        gap: 1.3em;
+    }
+
+    .navbar__items {
+        color: black;
+
+    }
+
+    .navbar__links {
+        display: flex;
+        align-items: center;
+    }
+
+    .submenu {
+        position: absolute;
+        z-index: 999;
+        background-color: rgb(0, 0, 0);
+        list-style-type: none;
+        display: none;
+        margin-top: 2rem;
+        gap: .5em;
+        list-style-type: none;
+        padding: .2em;
+    }
+
+    .submenu__items {
+        background-color: rgba(5, 243, 247, 0.801);
+        color: black;
+    }
+
+    .submenu__links:hover {
+        background-color: rgb(254, 254, 255);
+    }
+
+    .submenu__links {
+        color: black;
+    }
+
+    .navbar__links:hover+.submenu,
+    .submenu:hover {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar__items {
+        display: flex;
+    }
+
+
+    .user::before {
+        content: url(../assets/icons/user-solid.png);
+    }
+
+    .computer::before {
+        content: url(../assets/icons/monitoring-svgrepo-com.png);
+
+    }
+
+    .cpu::before {
+        content: url(../assets/icons/ordenador-personal.png);
+    }
+
+    .mouse::before {
+        content: url(../assets/icons/mouse-svgrepo-com.png);
+    }
+
+    .silla::before {
+        content: url(../assets/icons/silla-giratoria.png);
+    }
+
+
+
+
+    /**** Config movil  *******/
+    .btn__menu-movil {
+        display: none;
+    }
+
+    .btn__burguer {
+        display: none;
+    }
+
+    .navbar__menu-movil {
+        display: none;
+    }
+
 
 }
 
@@ -237,31 +359,44 @@
     }
 }
 
+
+
+
+
+
+
+@media(max-width: 402px) {
+    .logo {
+        margin-left: 2em;
+    }
+}
+
+
 /*******************************************************/
 
 
 /* Configs */
-@media(width < 768px) {
+/* @media(width < 768px) {
     .navbar__links span {
         display: none;
+    } */
+
+@media(width >=360px) {
+    .btn__menu-movil {
+        left: .5rem;
     }
 
-    @media(width >=360px) {
-        .btn__menu-movil {
-            left: .5rem;
-        }
-
-        .btn__burguer {
-            left: .5rem;
-        }
+    .btn__burguer {
+        left: .5rem;
     }
+}
 
-    /* Resolucion Desktop modificada*/
+/* Resolucion Desktop modificada*/
 
 
-    /* @media(width >=768px) { */
+/* @media(width >=768px) { */
 
-    /* .btn__menu-movil {
+/* .btn__menu-movil {
         display: none;
     }
 
@@ -280,8 +415,8 @@
         position: relative;
     } */
 
-    /* Navbar - Header */
-    /* .header {
+/* Navbar - Header */
+/* .header {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -319,7 +454,4 @@
 
 
 
-    /* } */
-
-
-}
+/* } */
