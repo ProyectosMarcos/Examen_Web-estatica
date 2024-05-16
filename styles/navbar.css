@@ -290,12 +290,13 @@
     }
 
     .submenu__items {
-        background-color: rgba(5, 243, 247, 0.801);
-        color: black;
+        background-color: #fff;
+        color: #fff;
     }
 
     .submenu__links:hover {
-        background-color: rgb(254, 254, 255);
+        background-color: #54aaab;
+
     }
 
     .submenu__links {
@@ -362,9 +363,6 @@
 
 
 
-
-
-
 @media(max-width: 402px) {
     .logo {
         margin-left: 2em;
@@ -376,10 +374,11 @@
 
 
 /* Configs */
-/* @media(width < 768px) {
+@media(width < 768px) {
     .navbar__links span {
         display: none;
-    } */
+    }
+}
 
 @media(width >=360px) {
     .btn__menu-movil {
@@ -390,68 +389,3 @@
         left: .5rem;
     }
 }
-
-/* Resolucion Desktop modificada*/
-
-
-/* @media(width >=768px) { */
-
-/* .btn__menu-movil {
-        display: none;
-    }
-
-    .btn__burguer {
-        display: none;
-    }
-
-
-
-    .navbar__movil {
-        display: none;
-        position: relative;
-    }
-
-    .navbar__menu-movil {
-        position: relative;
-    } */
-
-/* Navbar - Header */
-/* .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 1em;
-        color: #fff;
-    }
-
-    .header a {
-        color: #fff;
-    }
-
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .navbar__menu {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 1em;
-    }
-
-    .navbar__links {
-        text-decoration: none;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: .3em;
-        font-size: 1.2rem;
-    } */
-
-
-
-/* } */

@@ -18,15 +18,21 @@
 
 .container__form h2 {
     font-size: 1.7rem;
-    color: #fff;
+    color: #080808;
 }
 
 form {
     padding: 1.1em;
     width: 100%;
-    background-color: rgba(53, 51, 51, 0.538);
+    background-color: rgba(136, 162, 158, 0.937);
     position: relative;
 
+}
+
+label {
+    font-size: 1.3rem;
+    color: #080808;
+    font-weight: bold;
 }
 
 input[type="email"],
@@ -36,8 +42,46 @@ input[type="password"] {
 }
 
 input[type="email"]::placeholder,
-input[type="password"]::placeholder {
-    color: black;
+input[type="password"]::placeholder,
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+    color: #080808;
+}
+
+/* valid form */
+.form [required]:valid {
+    border: thick solid var(--color-valid);
+}
+
+.form [required]:invalid {
+    border: thin solid var(--color-invalid);
+}
+
+.form-error {
+    font-size: 1.1rem;
+    background-color: var(--color-invalid);
+    color: #000;
+    transition: all 800ms ease;
+    font-weight: bold;
+}
+
+.form-error.is-active {
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.none {
+    display: none;
+}
+
+@keyframes show-message {
+    0% {
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .box {
@@ -55,7 +99,7 @@ input[type="password"]::placeholder {
 }
 
 .info a {
-    color: #fff;
+    color: #000;
     font-weight: bold;
 }
 
@@ -69,7 +113,7 @@ input[type="password"]::placeholder {
     font-size: 1rem;
     margin-top: 1em;
     cursor: pointer;
-    background-color: rgb(141, 222, 195);
+    background-color: rgb(103, 189, 168);
     font-weight: bold;
 }
 
@@ -89,7 +133,7 @@ form button:nth-of-type(1):active {
 }
 
 .register p {
-    color: #fff;
+    color: #000;
     font-weight: bold;
 }
 

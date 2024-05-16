@@ -2,7 +2,8 @@
     --background: black;
     --color-primary: #054337;
     --color-secondary: rgb(82, 103, 138);
-
+    --color-valid: green;
+    --color-invalid: red;
 }
 
 html {
