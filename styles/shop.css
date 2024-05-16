@@ -1,5 +1,5 @@
 .shop {
-	background-color: #5c3bb66d;
+	background-color: #5c3bb6ec;
 	padding-top: 3rem;
 	color: white;
 	padding-bottom: 2em;
@@ -24,12 +24,12 @@
 	padding-bottom: 4em;
 	gap: 3em;
 	justify-content: center;
-	color: #000000;
+	color: #47554d;
 	cursor: pointer;
 }
 
 .product-card {
-	max-width: 200px;
+	max-width: 300px;
 	border: 2px solid #ADFF30;
 	border-radius: 10px;
 	text-align: center;
@@ -54,7 +54,7 @@
 
 .product-card .tached-price {
 	text-decoration: line-through;
-	font-size: 10px;
+	font-size: 16px;
 	text-decoration-thickness: 2px;
 }
 
@@ -129,82 +129,3 @@
 	justify-content: center;
 	font-size: 15px;
 }
-
-header {
-	background-color: #000000;
-	position: fixed;
-	display: flex;
-	width: 100%;
-	z-index: 99;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
-
-.header .gg-shopping-cart,
-.gg-user,
-.gg-log-in {
-	color: #fafafa;
-}
-
-.header h5 {
-
-	color: #fafafa;
-	font-size: 1em;
-}
-
-.product-card .gg-shopping-cart {
-	color: #000000;
-}
-
-.header .header-buttons {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 3em;
-}
-
-.shop h1 span {
-	color: #ADFF30;
-}
-
-.main {
-	background-color: #5c3bb615;
-}
-
-.container__brands {
-	background-color: #fafafa;
-	display: flex;
-	margin-top: 1em;
-	width: 100%;
-}
-
-.container__brands img {
-	max-width: 100%;
-}
-
-
-.main article:hover {
-	transform: translateY(-15px);
-	transition: ease 1s;
-}
-
-.header-buttons {
-	display: flex;
-	justify-content: space-between;
-	transform: translateX(-6em);
-}
-
-.header-buttons h5 {
-	margin-top: 5px;
-}
-
-.header-buttons a {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-}
-

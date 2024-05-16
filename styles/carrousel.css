@@ -53,6 +53,7 @@
     bottom: 10px;
     left: 0;
     color: #150b0b;
+   
     width: 100%;
     margin: 0;
     padding: 0;
@@ -64,6 +65,7 @@
     list-style: none;
     width: 10px;
     height: 10px;
+   
     background-color: #1cce39;
     margin: 10px;
     border-radius: 20px;
@@ -72,6 +74,7 @@
 
 .slider .dots li.active {
     width: 30px;
+  
 }
 
 .buttons {
@@ -79,7 +82,7 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .slider {
         padding-top: 100px;
         height: 15pc;
@@ -90,56 +93,48 @@
         height: 40px;
     }
 
-    .slider .dots {
-        display: none;
-    }
+    
 }
 
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .slider {
-        padding-top: 100px;
+      
         height: 13rem;
     }
 
     .slider .buttons button {
-        width: 20px;
-        height: 20px;
-    }
-
-    .slider .dots {
-        display: none;
+        width: 40px;
+        height: 40px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .slider {
         padding-top: 100px;
         height: 5pc;
     }
 
     .slider .buttons button {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
-
-    .slider .dots {
-        display: none;
+    .slider .dots li {
+        width: 5px;
+        height: 5px;
+    }
+    .slider .dots li.active {
+        width: 13px;
+      
     }
 }
 
-@media screen and (max-width: 390px) {
+@media (max-width: 390px) {
     .slider {
         padding-top: 100px;
         height: 3pc;
     }
-
     .slider .buttons button {
-        width: 30px;
-        height: 30px;
-    }
-
-    .slider .dots {
-        display: none;
+        width: 40px;
+        height: 40px;
     }
 }

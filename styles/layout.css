@@ -1,6 +1,6 @@
 
 .main {
-    background-color: #3b4042;
+    background-color: #143643;
 }
 
 .footer {
@@ -64,6 +64,164 @@
     width: 5rem;
 }
 
+/* Estilos para los enlaces adicionales */
+.additional-links {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .additional-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .additional-link:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  header {
+	background-color: #000000;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	z-index: 99;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.header .gg-shopping-cart,
+.gg-user,
+.gg-log-in {
+	color: #fafafa;
+}
+
+.header h5 {
+
+	color: #fafafa;
+	font-size: 1em;
+}
+
+.product-card .gg-shopping-cart {
+	color: #000000;
+}
+
+.header .header-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3em;
+}
+
+.shop h1 span {
+	color: #ADFF30;
+}
+
+.main {
+	background-color: #4f1bde15;
+}
+
+.container__brands {
+	background-color: #fafafa;
+	display: flex;
+	margin-top: 1em;
+	width: 100%;
+}
+
+.container__brands img {
+	max-width: 100%;
+}
+
+
+.brands article:hover {
+	transform: translateY(-15px);
+	transition: ease 1s;
+}
+
+.header-buttons {
+	display: flex;
+	justify-content: space-between;
+	transform: translateX(-6em);
+}
+
+.header-buttons h5 {
+	margin-top: 5px;
+}
+
+.header-buttons a {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos uniformemente */
+  align-items: center; /* Alinea verticalmente los elementos */
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.header-buttons > div {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  text-align: center; /* Centra el contenido horizontalmente */
+  padding: 0 10px; /* Añade espaciado horizontal entre los elementos */
+}
+
+.header-buttons h5 {
+  margin: 5px 0; /* Ajusta el margen del texto */
+}
+
+.header-buttons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido verticalmente */
+  text-decoration: none;
+  color: #fff; /* Color del texto */
+}
+
+.header-buttons a:hover {
+  color: #ADFF30; /* Cambia el color del texto al pasar el ratón */
+}
+
+.header-buttons a i {
+  font-size: 1.5em; /* Tamaño de los iconos */
+}
+  /* Media query para ocultar los enlaces en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .additional-links {
+      display: none; /* Oculta los enlaces en pantallas pequeñas */
+    }
+  }
+ 
+  
+  @media (max-width: 468px) {
+      .header-buttons {
+          display: flex;
+      justify-content: end;
+      
+    }
+    .header-buttons div:nth-child(1) {
+        display: none; /* Oculta el botón de Registro */
+    }
+    .header-buttons div:nth-child(3) {
+        
+    }
+    .logo{
+        display: inline-block;
+        padding-right: 6em;
+        margin-right: 1em;
+        padding-left: 4em;
+    }
+}
+
+
 @media(width > 468px) {
 
     .logo {
@@ -76,24 +234,3 @@
         padding-left: 6em;
     } 
 }
-
-@media (max-width: 468px) {
-    .header-buttons {
-      display: flex;
-      justify-content: end;
-      padding-left: .5em;
-      
-    }
-    .header-buttons div:nth-child(1) {
-      display: none; /* Oculta el botón de Registro */
-    }
-    .header-buttons div:nth-child(3) {
-    
-    }
-    .logo{
-        display: inline-block;
-        padding-right: 6em;
-        margin-right: 1em;
-        padding-left: 4em;
-    }
-  }

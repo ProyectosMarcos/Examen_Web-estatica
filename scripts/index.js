@@ -26,4 +26,25 @@ function reloadSlider() {
 
     clearInterval(refreshInterval);
     refreshInterval = setInterval(() => { next.click() }, 3000);
-} 
+}
+
+const btnOpenModal = document.querySelector("#btn-open-modal");
+const btnCloseModal = document.querySelector("#btn-close-modal");
+const modal =
+    document.querySelector("#modal");
+
+btnOpenModal.addEventListener("click", () => {
+    modal.showModal();
+})
+
+btnCloseModal.addEventListener("click", () => {
+    modal.close();
+})
+
+
+let modalTransition = document.getElementById("modal");
+
+function showModal() {
+    modalTransition.classList.add("show");
+}
+document.getElementById("openModal").addEventListener("click", showModal);
