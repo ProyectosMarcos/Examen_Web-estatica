@@ -12,11 +12,11 @@
 }
 
 .contact article h4 {
-    color: #c7c7c7;
+    color: #ffffff;
 }
 
 .contact article address {
-    color: #c7c7c7;
+    color: #ffffff;
     font-weight: bold;
     text-wrap: wrap;
 }
@@ -37,7 +37,7 @@
         text-align: center;
         gap: .2em;
         padding: .5em;
-        background-color: rgb(41, 43, 43);
+        background-color: #0a111394;
     }
 
     .contact h4,
