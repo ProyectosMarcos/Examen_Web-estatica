@@ -22,9 +22,11 @@ export function session() {
     e.preventDefault();
     const name = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
+    const userName = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const repeatPasswordValue = repeatPassword.value;
     const birthday = document.getElementById('birthday').value;
+    const newsletter = document.getElementById('newsletter').value;
 
     if (password !== repeatPasswordValue) {
       repeatPasswordError.classList.remove('none');
@@ -40,11 +42,12 @@ export function session() {
     users.push({
       name: name,
       lastName: lastName,
+      userName: userName,
       password: password,
       birthday: birthday,
+      newsletter: newsletter,
     });
     sessionStorage.setItem('users', JSON.stringify(users));
-    alert('Registro exitoso');
     formRegister.reset();
   });
 

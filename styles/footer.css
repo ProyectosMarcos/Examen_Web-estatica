@@ -27,7 +27,9 @@
     margin: 0 auto;
 }
 
-
+.details>a {
+    color: #111111;
+}
 
 /** @media modificar section contact **/
 @media(width < 768px) {

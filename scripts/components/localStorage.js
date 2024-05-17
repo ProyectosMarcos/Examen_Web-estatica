@@ -1,5 +1,4 @@
 export function local() {
-  const form = document.querySelector('.form');
   const inputs = document.querySelectorAll('.form [required]');
   console.log(inputs);
 
@@ -23,9 +22,11 @@ export function local() {
     e.preventDefault();
     const name = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
+    const userName = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const repeatPasswordValue = repeatPassword.value;
     const birthday = document.getElementById('birthday').value;
+    const newsletter = document.getElementById('newsletter').value;
 
     if (password !== repeatPasswordValue) {
       repeatPasswordError.classList.remove('none');
@@ -37,16 +38,16 @@ export function local() {
     if (userRegistered) {
       return alert('El usuario ya está registrado');
     }
-
     users.push({
       name: name,
       lastName: lastName,
+      userName: userName,
       password: password,
       birthday: birthday,
+      newsletter: newsletter,
     });
     localStorage.setItem('users', JSON.stringify(users));
     alert('Registro exitoso');
-    formRegister.reset();
   });
 
   repeatPassword.addEventListener('input', () => {
