@@ -1,62 +1,138 @@
-.main {
-    min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.register {
+  width: 100%;
+  padding: 20px;
+  background-color: #202324;
+  box-sizing: border-box;
 }
 
-.modal {
-    color: #f4f5f4;
-    max-width: 70ch;
-    max-height: 100ch;
-    padding: 2em;
-    background-color: #25a1159b;
-    border-radius: 10px;
-    box-shadow: -3px 0px 100px 50px rgba(3, 108, 184, 0.62);
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    transition: opacity 0.3s ease;
+.register-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #684ABB;
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(14, 201, 45);
+  border-radius: 0 0 3em 3em;
 }
 
-.modal.show {
-    opacity: 1;
+.register-container h5 {
+  font-size: 30px;
+  color: #fafafa;
 }
 
-#modal::backdrop {
-    background-color: rgba(9, 3, 26, 0.82);
+h2 {
+  text-align: center;
+  color: #ffffff;
 }
 
-.modal h2 {
-    font-size: 1.7rem;
-    margin-bottom: 1em;
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-head {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #cdcaca;
 }
 
 .box {
-    margin-bottom: 1em;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box input,
+.box select {
+  padding: 10px;
+  color: #000000;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.box label {
+  display: flex;
+  cursor: pointer;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fafafa;
+}
+
+.box label input {
+  margin-right: 10px;
 }
 
 .info {
-    margin-top: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  color: #000000;
 }
 
 .info a {
-    color: #eeefe5;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 1em;
+  color: #fffcfc;
+  text-decoration: none;
 }
 
 .info a:hover {
-    text-decoration: underline;
+  text-decoration: underline 2px rgb(13, 201, 66);
+  transition: .2s ease;
 }
 
 .info h5 {
-    display:grid;
+  font-size: 30px;
+  color: #fafafa;
+}
+
+
+.btnContinue {
+  padding: 10px 20px;
+  border: none;
+  background-color: #53575c;
+  color: #d41d1d;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  width: 50%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.btnContinue:hover {
+  background-color: #8599ae;
+}
+
+
+.modal {
+  color: #f4f5f4;
+  max-width: 70ch;
+  max-height: 100ch;
+  padding: 2em;
+  background-color: #684ABB;
+  border-radius: 10px;
+  box-shadow: -3px 0px 100px 50px rgb(48, 212, 62);
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal.show {
+  opacity: 1;
+}
+
+#modal::backdrop {
+  background-color: rgba(9, 3, 26, 0.82);
+}
+
+.modal h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1em;
 }
 
 input[type="email"],
@@ -64,15 +140,15 @@ input[type="password"],
 select,
 input[type="number"],
 input[type="text"] {
-    width: 100%;
-    padding: 0.5em;
-    font-size: 1rem;
-    margin-top: 0.5em;
-    border-radius: 5px;
-    border: none;
-    background-color: rgba(79, 16, 173, 0.624);
-    color: #fff;
-    outline: none;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1rem;
+  margin-top: 0.5em;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(241, 241, 241, 0.624);
+  color: #000000;
+  outline: none;
 }
 
 input[type="email"]::placeholder,
@@ -81,119 +157,158 @@ input[type="search"]::placeholder,
 input[type="name"]::placeholder,
 input[type="surname"]::placeholder,
 select option {
-    color: #ada9a9c1;
+  color: #000000c1;
 }
 
 .btnContinue,
 .loginButton,
 .passwordBtn {
-    width: 100%;
-    padding: 0.5em;
-    font-size: 1rem;
-    margin-top: 1em;
-    cursor: pointer;
-    background-color: rgb(141, 222, 195);
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    transition: background-color 0.3s;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1rem;
+  margin-top: 1em;
+  cursor: pointer;
+  background-color: rgba(236, 237, 232, 0.93);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s;
 }
 
 .btnContinue:hover,
 .loginButton:hover,
 .passwordBtn:hover {
-    background-color: #8fcdb5;
+  background-color: #8fcdb5;
 }
 
 #btn-close-modal {
-    border-radius: 50px;
-    height: 20px;
-    padding-bottom: 20px;
-    border: none;
-    width: 50px;
-    background-color: #fafafa;
+  border-radius: 50px;
+  height: 20px;
+  border: none;
+  width: 50px;
+  color: #fafafa;
+  background-color: #232423;
+  transition: all ease 500ms;
 }
 
-@media (max-width: 360px) {
-        .modal {
-            max-width: 30ch;
-            max-height: 60ch;
-        }
-        .main {
-            max-height: 5vh;
-        
-        }
-    }
+#btn-close-modal:hover {
+  color: #000000;
+  background-color: greenyellow;
+  transition: ease-out 500ms;
+}
+
+.sign-in {
+  background-color: #202324;
+  padding-top: 8em;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 6.3em;
+}
+
+.sign-in h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 60px;
+  color: #fafafa;
+  align-content: center;
+}
+
+.sign-in h5 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #fafafa;
+  align-content: first baseline;
+}
+
+.sign-in-form {
+  height: 100%;
+  background-color: #684ABB;
+  padding: 2em;
+  color: #fafafa;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 0 10px rgb(48, 212, 62);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #fdfdfd;
+  color: #000000;
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+  cursor: pointer;
+  transition: ease-out 500ms;
+}
+
+button[type="submit"]:hover {
+  background-color: #510fae;
+  color: #fafafa;
+
+}
+
+.register-head h2 {
+  margin-top: 1.2em;
+  font-size: 30px;
+}
 
 
-    .sign-in {
-        background-color: rgb(0, 0, 0);
-        padding: 10em;
-      }
-      
-      .container {
-        max-width: 600px;
-        margin: 0 auto;
-      }
-      
-      .sign-in h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 60px;
-        color: #fafafa;
-        align-content: center;
-      }
-      .sign-in h5 {
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 10px;
-        color: #fafafa;
-        align-content: first baseline;
-      }
-      
-      .sign-in-form {
-        background-color: #2ee13abe;
-        padding: 20px;
-        color: #fafafa;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      
-      .form-group {
-        margin-bottom: 20px;
-      }
-      
-      .form-group label {
-        display: block;
-        margin-bottom: 5px;
-      }
-      
-      .form-group input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-      
-      button[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        background-color: #8fcdb5;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      
-      button[type="submit"]:hover {
-        background-color: #510fae;
-      }
-      
-      
-      @media screen and (max-width: 768px) {
-        .container {
-          max-width: 100%;
-        }
-      }
-  
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .btnContinue {
+    width: 100%;
+  }
+
+  .modal {
+    max-width: 30ch;
+    max-height: 60ch;
+  }
+
+  .sign-in h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .modal {
+    max-width: 30ch;
+    max-height: 60ch;
+  }
+
+  .main {
+    max-height: 2vh;
+  }
+
+  .sign-in h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+}

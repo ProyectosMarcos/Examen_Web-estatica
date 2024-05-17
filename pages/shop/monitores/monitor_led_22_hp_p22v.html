@@ -5,472 +5,236 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#202020" />
-  <link rel="shortcut icon" href="../../assets/icons/logo-7.png" type="image/x-icon">
-  <link rel="stylesheet" href="../../../styles/index.css" />
-  <title>Examen - Web estatica</title>
+  <link rel="stylesheet" href="/../styles/index.css" />
+  <link
+    href="https://css.gg/css?=|arrow-left|arrow-right|facebook|search|log-in|menu|instagram|shopping-cart|user|youtube"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="/assets/images/fulltech3.webp">
+  <title>Monitores</title>
 </head>
 
 <body>
-  <header class="header">
-    <picture class="logo">
-      <a href="../../../index.html">
-        <img src="../../../assets/icons/logo-7.png" alt="logo FullTech" />
+
+
+  <div class="float-contact">
+
+    <div class="whatsapp">
+      <a href="https://wa.me/5491135094661" target="_blank">
+        <img src="/assets/images/whatsapp.svg" alt="">
       </a>
-    </picture>
+
+    </div>
+    <div class="hotsale">
+      <a href="https://www.hotsale.com.ar/" target="_blank">
+        <img src="/assets/images/hotsale.svg" alt="">
+      </a>
+
+    </div>
+
+  </div>
+  <header class="header">
+
+    <div class="additional-links">
+      <a href="/index.html" class="additional-link">Inicio</a>
+      <a href="/index.html/#monitores" class="additional-link">Monitores</a>
+      <a href="/index.html/#perifericos" class="additional-link">Perifericos</a>
+      <a href="#contact" class="additional-link">Contacto</a>
+    </div>
+
+    <div class="logo">
+      <a href="/index.html"><img src="/assets/images/fulltech3.webp" alt="logo" /></a>
+    </div>
+
+
+    <input type="checkbox" name="" id="" class="btn__menu" />
+    <label for="" class="btn__burguer"></label>
+    <div class="header-buttons">
+      <div>
+
+        <a href="/pages/admin/register.html" id="btn-open-modal"><i class="gg-user"></i>
+          <h5>Registrate</h5>
+        </a>
+
+      </div>
+      <div>
+        <a href="#"><i class="gg-shopping-cart"></i>
+          <h5>Carrito</h5>
+        </a>
+
+      </div>
+      <div>
+        <a href="./login.html"><i class="gg-log-in"></i>
+          <h5>Ingresar</h5>
+        </a>
+
+      </div>
+    </div>
     <nav class="navbar">
       <ul class="navbar__menu">
         <li class="navbar__items">
-          <picture>
-            <a href="../../../index.html" class="navbar__links">
-              <img class="icon" src="../../../assets/icons/user-solid.png" alt="user" />
-              <span id="">Ingresar</span>
-            </a>
-          </picture>
+          <a href="/index.html" class="navbar__links">Inicio</a>
         </li>
         <li class="navbar__items">
-          <picture id="openModalSearch">
-            <a href="#" class="navbar__links">
-              <img class="icon" src="../../../assets/icons/magnifying-glass-solid.png" alt="search" />
-            </a>
-          </picture>
+          <a href="#monitores" class="navbar__links">Monitores</a>
+        </li>
+        <li class="navbar__items">
+          <a href="#perifericos" class="navbar__links">Perifericos</a>
+        </li>
+        <li class="navbar__items">
+          <a href="" class="navbar__links">Motherboards</a>
+        </li>
+        <li class="navbar__items">
+          <a href="" class="navbar__links">Memorias RAM</a>
+        </li>
+        <li class="navbar__items">
+          <a href="" class="navbar__links">Procesadores</a>
+        </li>
+        <li class="navbar__items">
+          <a href="" class="navbar__links"> </a>
         </li>
 
-        <li class="navbar__items">
-          <picture>
-            <a href="" class="navbar__links">
-              <img src="../../../assets/icons/cart-icon.png" alt="carrito" />
-              <span>Mi carrito</span>
-            </a>
-          </picture>
-        </li>
       </ul>
     </nav>
   </header>
-
-  <dialog id="modalSearch" class="modalSearch">
-    <form action="" class="formSearch">
-      <button id="closeModalSearch" class="closeModalSearch">❎</button>
-      <div>
-        <input type="search" name="" placeholder="Buscar" id="searchInput" />
-      </div>
-      <button type="submit" class="searchButton">
-        <img class="icon" src="../../../assets/icons/magnifying-glass-solid.png" alt="search" />
-      </button>
-    </form>
-  </dialog>
-  <input type="checkbox" name="" id="" class="btn__menu-movil" />
-  <label for="" class="btn__burguer"></label>
-  <nav class="navbar__movil">
-    <ul class="navbar__menu-movil">
-      <li class="navbar__items-movil">
-        <label for="toggle-submenu" class="navbar__links-movil computer">Monitores
-          <img class="icon-submenu" src="../../../assets/icons/chevron-derecho.png" alt="flecha-derecha">
-        </label>
-        <input type="checkbox" id="toggle-submenu" class="toggle-submenu">
-        <ul class="submenu">
-          <label for="toggle-submenu" class="navbar__links-movil computer">Monitores
-            <img class="icon-submenu" src="../../../assets/icons/chevron-izquierdo.png" alt="flecha">
-          </label>
-          <input type="checkbox" id="toggle-submenu" class="toggle-submenu">
-          <li class="submenu__item"><a href="./monitor_led_ips_22_benq.html" class="submenu__link">Monitor LED IPS 22
-              BENQ GW2283 Black</a></li>
-          <li class="submenu__item"><a href="./monitor_led_tn24_benq.html" class="submenu__link">Monitor LED TN 24 BENQ
-              GL2480 Dark</a></li>
-          <li class="submenu__item"><a href="./monitor_led_22_hp_p22v.html" class="submenu__link">Monitor LED 22 HP P22V
-              G4 VGA + HDMI</a></li>
-          <li class="submenu__item"><a href="./monitor_led_ips_24_gaming_gigabyte.html" class="submenu__link"> Monitor
-              Led Ips 24 Gaming Gigabyte</a></li>
-          <li class="submenu__item"><a href="./monitor_led_19_philips_193v5l.html" class="submenu__link"> Monitor LED 19
-              Philips 193V5L V-Line VGA HDMI</a></li>
-          <li class="submenu__item"><a href="./monitor_led_24_viewsonic_vx2418.html" class="submenu__link"> Monitor Led
-              24 Viewsonic Vx2418-P-Mhd</a></li>
-          <li class="submenu__item"><a href="./monitor_led_ips_22_samsung_t350h.html" class="submenu__link">
-              Monitor LED IPS 22 Samsung T350H</a></li>
-        </ul>
-      </li>
-
-      <li class="navbar__items-movil">
-        <label for="toggle-submenu-cpu" class="navbar__links-movil cpu">CPU
-          <img class="icon-submenu" src="../../../assets/icons/chevron-derecho.png" alt="flecha-derecha">
-        </label>
-        <input type="checkbox" id="toggle-submenu-cpu" class="toggle-submenu">
-        <ul class="submenu">
-          <label for="toggle-submenu-cpu" class="navbar__links-movil cpu">CPU
-            <img class="icon-submenu" src="../../../assets/icons/chevron-izquierdo.png" alt="flecha">
-          </label>
-          <input type="checkbox" id="toggle-submenu" class="toggle-submenu">
-          <li class="submenu__item"><a href="../cpu/pc_hogar_ryzen_5_5600g.html" class="submenu__link">PC
-              Hogar Asus AMD Ryzen 5 5600G RAM 16GB SSD 480GB</a></li>
-          <li class="submenu__item"><a href="../cpu/pc_ryzen_8600g.html" class="submenu__link">PC Gamer Asus
-              AMD Ryzen 5 8600G RAM 16GB SSD 1TB</a></li>
-          <li class="submenu__item"><a href="../cpu/gabinete_xigmatek_gaming_x6_Fan_edition.html"
-              class="submenu__link">Gabinete Xigmatek Gaming X 6 Fan Edition - No LED</a></li>
-          <li class="submenu__item"><a href="../cpu/gabinete_gamer_pollux.html" class="submenu__link">Gabinete
-              Gamer Zer01 Gaming Pollux 4 Fan Fixed RGB</a></li>
-        </ul>
-      </li>
-
-      <li class="navbar__items-movil">
-        <label for="toggle-submenu-mouse" class="navbar__links-movil mouse">Mouse
-          <img class="icon-submenu" src="../../../assets/icons/chevron-derecho.png" alt="flecha-derecha">
-        </label>
-        <input type="checkbox" id="toggle-submenu-mouse" class="toggle-submenu">
-        <ul class="submenu">
-          <label for="toggle-submenu-mouse" class="navbar__links-movil mouse">Mouse
-            <img class="icon-submenu" src="../../../assets/icons/chevron-izquierdo.png" alt="flecha">
-          </label>
-          <input type="checkbox" id="toggle-submenu" class="toggle-submenu">
-          <li class="submenu__item"><a href="../mouse/mouse_fury_battler.html" class="submenu__link">Mouse
-              Fury Battler Rgb</a></li>
-          <li class="submenu__item"><a href="../mouse/mouse_fury_hustler_rgb.html" class="submenu__link">Mouse
-              Fury Hustler Rgb</a></li>
-          <li class="submenu__item"><a href="../mouse/mouse_genesis_krypton_200.html" class="submenu__link">Mouse
-              Genesis Krypton 200</a></li>
-          <li class="submenu__item"><a href="../mouse/mouse_genesis_krypton_220_rgb.html" class="submenu__link"> Mouse
-              Genesis Krypton 220 Rgb</a></li>
-        </ul>
-      </li>
-
-      <li class="navbar__items-movil">
-        <label for="toggle-submenu-silla" class="navbar__links-movil silla">Sillas
-          <img class="icon-submenu" src="../../../assets/icons/chevron-derecho.png" alt="flecha-derecha">
-        </label>
-        <input type="checkbox" id="toggle-submenu-silla" class="toggle-submenu">
-        <ul class="submenu">
-          <label for="toggle-submenu-silla" class="navbar__links-movil silla">Sillas
-            <img class="icon-submenu" src="../../../assets/icons/chevron-izquierdo.png" alt="flecha">
-          </label>
-          <input type="checkbox" id="toggle-submenu" class="toggle-submenu">
-          <li class="submenu__item"><a href="..sillas/silla_gamer_xtech_drakon.html" class="submenu__link">Silla Gamer
-              XTECH Drakon XTF-EC129</a></li>
-          <li class="submenu__item"><a href="..sillas/shop/sillas/silla_gamer_xtech_spiderman.html"
-              class="submenu__link">Silla Gamer Xtech Spider Man.</a></li>
-          <li class="submenu__item"><a href="..sillas/shop/sillas/silla_gamer_antec_ti_sport_red.html"
-              class="submenu__link">Silla Gamer Antec T1 Sport Black Red</a></li>
-          <li class="submenu__item"><a href="..sillas/shop/sillas/silla_gamer_antec_black_yellow.html"
-              class="submenu__link"> Silla Gamer Antec T1 Sport Black Yellow</a></li>
-
-        </ul>
-      </li>
-    </ul>
-  </nav>
-
-  <main class="main background-img">
-    <section class="pc">
-      <article class="container__pc">
-        <h2>Monitor LED 22 HP P22V G4 VGA + HDMI</h2>
-        <figure>
-          <picture>
-            <img src="../../../assets/images/9TT53AA_800Monitor LED 22 HP P22V G4 VGA + HDMI.jpg"
-              alt="Monitor LED 22 HP" />
-          </picture>
-          <figcaption>
-            <del>
-              <p>$129.900<sup>00</sup></p>
-            </del>
-            <h3>$97.425<sup>00</sup></h3>
-            <small>Precio Especial</small>
-            <h4>TARJETA DE CREDITO</h4>
-            <p>$110.090,25</p>
-            <div class="shopBtns">
-              <button class="shop">COMPRAR</button>
-              <button class="add__item">AGREGAR AL CARRITO</button>
-            </div>
-            <div class="items__cart">
-              <div class="items__cart-btn">
-                <button id="add" class="items__cart-mas">+</button>
-                <input class="items__input" type="text" name="quantity" id="quantity" placeholder="0">
-                <button id="substract" class="items__cart-menos">-</button>
-              </div>
-            </div>
-            <small>6 cuotas fijas de $21.271,13 con</small>
-            <small>Cuota Simple.</small>
-            <h4>STOCK ALTO EN LA WEB</h4>
-            <small>Solo para venta web</small>
-            <h4>STOCK ALTO EN EL LOCAL</h4>
-            <small>Solo para venta presencial</small>
-            <h4>RETIRO <span style="color: rgb(37, 199, 37);">¡GRATIS!</span></h4>
-            <p>Envío a todo el pais.</p>
-            <h4>GARANTÍA</h4>
-            <small>360 días</small>
-            <div>
-              <picture><a href="https://www.facebook.com/" target="_blank" reel="noopener"><img class="icon"
-                    src="../../../assets/icons/facebook_2.png" alt="facebook"></a></picture>
-              <picture><a href="https://twitter.com/" target="_blank" reel="noopener"><img class="icon"
-                    src="../../../assets/icons/twitter_2.png" alt="twitter"></a></picture>
-              <picture><a href="https://www.youtube.com/" target="_blank" reel="noopener"><img class="icon"
-                    src="../../../assets/icons/youtube_2.png" alt="youtube"></a></picture>
-            </div>
-          </figcaption>
-        </figure>
+  <section class="product-page-container">
+    <div class="product-page">
+      <nav class="breadcrumb">
+          <a href="#">Monitores</a> &gt; <a href="#">HP</a>
+      </nav>
+      
+      <div class="product-container">
+        <div class="product-image">
+            <img src="/assets/images/monitor-6.webp" alt="monitor led 22 hp p22v">
+            <div class="hot-week">Hot Sale!</div>
         </div>
-      </article>
-    </section>
-    <section class="components table">
-      <h5>ESPECIFICACIONES DEL PRODUCTO</h5>
-      <article>
-        <div class="first-table">
-          <table>
-            <thead>
-              <tr>
-                <th>General</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tipo De Panel</td>
-                <td>TN</td>
-
-              </tr>
-              <tr>
-                <td>Pantalla</td>
-                <td>Plana</td>
-
-              </tr>
-              <tr>
-                <td>Ancho</td>
-                <td>476,64 Mm</td>
-              </tr>
-              <tr>
-                <td>Alto</td>
-                <td>268,1 Mm</td>
-              </tr>
-              <tr>
-                <td>Tamaño De Pantalla</td>
-                <td>21,5"</td>
-              </tr>
-            </tbody>
-            <article>
-              <table>
-                <thead>
-                  <th>Conectividad</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Entrada VGA</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>Entrada Display port</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>Entrada HDMI</td>
-                    <td>1</td>
-                  </tr>
-                </tbody>
-              </table>
-            </article>
-          </table>
+    
+        <div class="product-details">
+            <h1>Monitor LED 22 HP P22v</h1>
+            <div class="price">
+                <span class="old-price">$299.990</span>
+                <span class="new-price">$269.991</span>
+                <span class="discount">10% OFF</span>
+                <span class="credit-price">Tarjeta de crédito: $308.390,01</span>
+            </div>
+            <div class="actions">
+                <button class="buy-button">COMPRAR</button>
+                <button class="cart-button">AGREGAR AL CARRITO</button>
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="additional-info">
+                <p>6 cuotas fijas de $5.833,17 con Cuota Simple. <a href="#">Ver cuotas</a></p>
+                <p class="warning">¡ÚLTIMAS UNIDADES! Solo para venta web</p>
+                <p class="stock">STOCK ALTO EN EL LOCAL Solo para venta presencial</p>
+                <p class="pickup">RETIRO ¡GRATIS! Floresta y Local Galería Jardín (CABA)</p>
+                <p class="shipping">Envío a todo el país. <a href="#">Ver costo de envío</a></p>
+                <p class="warranty">GARANTÍA 360 días</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><img src="/assets/icons/facebook.svg" alt="Facebook"></a>
+                <a href="https://x.com/"><img src="/assets/icons/twitter_2.png" alt="Twitter"></a>
+                <a href="https://wa.me/5491135094661"><img src="/assets/images/whatsapp.webp" alt="WhatsApp"></a>
+                <a href="https://www.youtube.com/"><img src="/assets/icons/youtube_2.png" alt="Youtube"></a>
+            </div>
         </div>
-      </article>
-      <div class="second-table">
-        <article>
-          <table>
-            <thead>
-              <tr>
-                <th>Caracteristicas</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Consumo Maximo</td>
-                <td>19W</td>
-              </tr>
-              <tr>
-                <td>Resolucion Maxima</td>
-                <td>1920 X 1080</td>
-              </tr>
-              <tr>
-                <td>Tiempo De Respuesta</td>
-                <td>5 Ms</td>
-              </tr>
-              <tr>
-                <td>Cantidad De Colores</td>
-                <td>16.7M</td>
-              </tr>
-              <tr>
-                <td>Frecuencia Maxima</td>
-                <td>60Hz</td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
-      </div>
-    </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <section class="products">
-      <h2>Productos mas vendidos</h2>
-      <div class="container__products">
-        <article class="productos__box">
-          <figure>
-            <picture>
-              <a href="../sillas/silla_gamer_xtech_drakon.html">
-                <img src="../../../assets/images/XTF-EC129_800Silla Gamer XTECH Drakon XTF-EC129.jpg"
-                  alt="Silla Gamer XTECH Drakon XTF-EC129" />
-              </a>
-
-              <figcaption>
-                Silla Gamer XTECH Drakon XTF-EC129
-                <del>
-                  <p>$105.375<sup>27</sup></p>
-                </del>
-                <h3>$102.148<sup>20</sup></h3>
-                <small>Precio Especial</small>
-                <div class="prices">
-                  <div class="price">
-                    <p>¡Hasta 6 cuotas fijas!</p>
-                  </div>
-                  <a href="../sillas/silla_gamer_xtech_drakon.html"><button class="btnProducts">VER
-                      MAS</button></a>
+    </div>
+        <div class="product-specs">
+            <h2>ESPECIFICACIONES DEL PRODUCTO</h2>
+            <div class="specs">
+                <div class="spec">
+                    <h3>General</h3>
+                    <p><strong>Marca:</strong> HP</p>
+                    <p><strong>Modelo:</strong> P22v</p>
+                    <p><strong>Pantalla:</strong> LED</p>
+                    <p><strong>Tamaño:</strong> 21.5 pulgadas</p>
                 </div>
-              </figcaption>
-            </picture>
-          </figure>
-        </article>
-        <article class="productos__box">
-          <figure>
-            <picture>
-              <a href="../cpu/pc_ryzen_8600g.html">
-                <img
-                  src="../../../assets/product/PC-Armada-Media-20374_800__PC Gamer Asus AMD Ryzen 5 8600G RAM 16GB SSD 1TB.jpg"
-                  alt="PC Gamer Asus AMD Ryzen 5 8600G " />
-              </a>
-
-              <figcaption>
-                PC Gamer Asus AMD Ryzen 5 8600G
-                <del>
-                  <p>$798.767<sup>43</sup></p>
-                </del>
-                <h3>$796.326<sup>50</sup></h3>
-                <small>Precio Especial</small>
-                <div class="prices">
-                  <div class="price">
-                    <p>¡Hasta 6 cuotas fijas!</p>
-                  </div>
-                  <a href="../cpu/pc_ryzen_8600g.html"><button class="btnProducts">VER
-                      MAS</button></a>
+                <div class="spec">
+                    <h3>Visualización</h3>
+                    <p><strong>Resolución:</strong> 1920 x 1080</p>
+                    <p><strong>Relación de Aspecto:</strong> 16:9</p>
+                    <p><strong>Tiempo de Respuesta:</strong> 5 ms</p>
+                    <p><strong>Brillo:</strong> 250 cd/m²</p>
+                    <p><strong>Contraste:</strong> 1000:1</p>
                 </div>
-              </figcaption>
-            </picture>
-          </figure>
-        </article>
-        <article class="productos__box">
-          <figure>
-            <picture>
-              <a href="../monitores/monitor_led_ips_24_gaming_gigabyte.html">
-                <img src="../../../assets/images/G24F2-AR_800Monitor Led Ips 24 Gaming Gigabyte G24f2-Ar 165hz 1ms.jpg"
-                  alt="Monitor Led Ips 24 Gaming Gigabyte" />
-              </a>
-              <figcaption>
-                Monitor LED IPS 24" Gaming Gigabyte
-                <del>
-                  <p>$296.200<sup>00</sup></p>
-                </del>
-                <h3>$266.580<sup>00</sup></h3>
-                <small>Precio Especial</small>
-                <div class="prices">
-                  <div class="price">
-                    <p>¡Hasta 6 cuotas fijas!</p>
-                  </div>
-                  <a href="../monitores/monitor_led_ips_24_gaming_gigabyte.html"><button class="btnProducts">VER
-                      MAS</button></a>
+                <div class="spec">
+                    <h3>Conectividad</h3>
+                    <p><strong>Entradas de Video:</strong> VGA, HDMI</p>
                 </div>
-              </figcaption>
-            </picture>
-          </figure>
-        </article>
-        <article class="productos__box">
-          <figure>
-            <picture>
-              <a href="../mouse/mouse_genesis_krypton_220_rgb.html">
-                <img src="../../../assets/images/NMG-1770_800Mouse Genesis Krypton 220 Rgb.jpg"
-                  alt="Mouse Genesis Krypton 220 Rgb " />
-              </a>
-
-              <figcaption>
-                Mouse Genesis Krypton 220 Rgb
-                <h3>$16.421<sup>70</sup></h3>
-                <small>Precio Especial</small>
-                <br><br>
-                <div class="prices">
-                  <div class="price">
-                    <p>¡Hasta 6 cuotas fijas!</p>
-                  </div>
-                  <a href="../mouse/mouse_genesis_krypton_220_rgb.html"><button class="btnProducts">VER
-                      MAS</button></a>
+                <div class="spec">
+                    <h3>Ergonomía</h3>
+                    <p><strong>Montaje VESA:</strong> 100 x 100 mm</p>
                 </div>
-              </figcaption>
-            </picture>
-          </figure>
-        </article>
-
-      </div>
-    </section>
-
-    <br /><br /><br /><br /><br />
-    <section class="contact">
-      <article>
-        <h4>¡Contactanos!</h4>
-        <address>
-          Remedios de Escalada de San Martín 7373 Floresta (CABA)
-        </address>
-        <article>
-          <address>Florida 777 PB, Local 379 Microcentro (CABA)</address>
-        </article>
-      </article>
-      <article>
-        <h4>Nuestros Horarios</h4>
-        <address>
-          Floresta L-V. 9:00 AM - 18:00 PM Sab 10:00 AM - 14:30 PM.
-        </address>
-        <article>
-          <address>
-            Florida Local L-V. 10:00 AM a 19:00 PM Sab 10:00 AM - 14:30 PM
-          </address>
-        </article>
-      </article>
-      <article class="redes">
-        <h4>Seguinos en las Redes</h4>
-        <dix class="box__redes">
-          <picture class="instagram">
-            <a href="https://instagram.com/" target="_blank" reel="noopener">
-              <img src="../../../assets/icons/instagram.svg" alt="instagram" reel="noopener" />
-            </a>
-          </picture>
-          <picture class="facebook">
-            <a href="https://facebook.com">
-              <img src="../../../assets/icons/facebook.svg" target="_blank" alt="facebook" reel="noopener" />
-            </a>
-          </picture>
-          <picture class="youtube">
-            <a href="https://youtube.com/">
-              <img src="../../../assets/icons/youtube.svg" target="_blank" alt="youtube" reel="noopener" />
-            </a>
-          </picture>
-        </dix>
-      </article>
-      <article class="details">
-        <h4>Defensa del Consumidor</h4>
-        <a style="text-decoration: none; color: #fff"
-          href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/638/norma.htm" target="_blank"
-          reel="noopener">Ley de defensa del consumidor</a>
-        <a style="text-decoration: none; color: #fff"
-          href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/conoce-tus-derechos" target="_blank"
-          reel="noopener">Conocé tus derechos consumidor</a>
-
-        <div class="box">
-          <picture><img src="" alt="" /></picture>
-          <picture><img src="" alt="" /></picture>
+            </div>
+            <p class="ean">UID: 814914027378</p>
         </div>
-      </article>
     </section>
-  </main>
+    
+ 
+
+
+  <section class="contact" id="contact">
+    <article>
+      <h3>¡Encuentranos!</h3>
+      <address>
+        Remedios de Escalada de San Martín 7373 Floresta (CABA)
+
+      </address>
+
+      <article>
+        <address>Florida 777 PB, Local 37 Microcentro (CABA)</address>
+      </article>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9868726344853!2d-58.37842292353096!3d-34.60449345754049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb8115b7a9d6465%3A0x52d718a636f8d8c5!2sFundaci%C3%B3n%20Integrar!5e0!3m2!1sen!2sar!4v1715882978812!5m2!1sen!2sar"
+        width="80%" height="50%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br>
+    </article>
+    <article>
+      <h3>Nuestros Horarios</h3>
+      <address> <strong>Floresta</strong> <br>
+        Lun-Vie: 9:00-18:00 Hs<br>
+        Sáb: 10:00-14:30Hs</address>
+      <article> <br> <br>
+        <address> <strong>Florida Local</strong> <br>
+          Lun-Vie: 10:00-19:00 hs <br>
+          Sab 10:00 - 14:30 Hs</address>
+      </article>
+    </article>
+    <article class="redes">
+      <h3>Síguenos en las Redes</h3>
+      <dix class="box__redes">
+        <div class="instagram">
+          <a href="https://instagram.com/" target="_blank">
+            <i class="gg-instagram"></i>
+          </a>
+        </div>
+        <div class="facebook">
+          <a href="https://facebook.com" target="_blank">
+            <i class="gg-facebook"></i>
+          </a>
+        </div>
+        <div class="youtube">
+          <a href="https://youtube.com/" target="_blank">
+            <i class="gg-youtube"></i>
+          </a>
+        </div>
+      </dix>
+    </article>
+    <article class="details">
+      <h3>Defensa del Consumidor</h3>
+      <a style="text-decoration: none; color: #fff;"
+        href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/638/norma.htm" target="_blank"
+        reel="noopener">Ley de defensa del consumidor</a>
+      <a style="text-decoration: none; color: #fff;"
+        href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/conoce-tus-derechos" target="_blank"
+        reel="noopener">Conocé tus derechos consumidor</a>
+
+    </article>
+  </section>
   <footer class="footer">
     <small>&copy Examen Web estatica [HTML5 - CSS3 - JS] Proyecto FullTech</small>
   </footer>
-  <script src="../../../scripts/shop.js" type="module"></script>
+  <script src="../../../../scripts/index.js"></script>
+
 </body>
 
 </html>

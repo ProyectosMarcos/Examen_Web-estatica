@@ -4,11 +4,9 @@
 	color: white;
 	padding-bottom: 2em;
 	text-align: center;
-
 }
 
 .shop h1 {
-
 	font-size: 40px;
 }
 
@@ -18,10 +16,10 @@
 
 .container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	padding-left: 1em;
 	padding-right: 1em;
-	padding-bottom: 4em;
+	padding-bottom: 1em;
 	gap: 3em;
 	justify-content: center;
 	color: #47554d;
@@ -29,27 +27,35 @@
 }
 
 .product-card {
-	max-width: 300px;
+	max-width: 100%;
 	border: 2px solid #ADFF30;
 	border-radius: 10px;
 	text-align: center;
 	background-color: #ffffff;
 	transition: all .5s ease;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .price-box {
 	display: grid;
 }
 
-.price {
+.price-box .price {
 	font-size: 25px;
 	color: #000000;
-
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	font-weight: bold;
 }
 
-.product-card h2 {
-	font-size: 12px;
+.shop .product-card h2 {
+	font-size: 1rem;
+	color: #000000;
+	margin: 0;
 }
 
 .product-card .tached-price {
@@ -59,34 +65,29 @@
 }
 
 .product-card .tached-price sup {
-	font-size: 5px;
+	font-size: 0.5rem;
 	text-decoration: line-through;
 	text-decoration-thickness: 2px;
 }
 
 .special-price {
 	padding-bottom: 10px;
-	font-size: 10px;
+	font-size: 0.8rem;
 	color: #666;
 }
 
 .product-card .price sup {
-	font-size: 10px;
+	font-size: 0.8rem;
 }
 
 .product-card img {
 	width: 100%;
 	height: auto;
-	border-bottom: #000000 solid;
-	border-top: #000000 solid;
 	border-radius: 10px;
 }
 
-
 .installments {
 	padding-left: 5px;
-	border-top: 3px solid #ADFF30;
-	border-bottom: 3px solid #ADFF30;
 	font-size: 14px;
 	color: #666;
 }
@@ -94,13 +95,14 @@
 .cta-button {
 	display: inline-block;
 	padding: 5px;
-	font-size: 10px;
-	margin-top: 10px;
-	border-radius: 10px 10px 0px 0px;
+	height: 3em;
+	font: bold 0.8rem sans-serif;
+	border-radius: 0 0 10px 10px;
 	background-color: #8f26e4;
-	color: white;
+	color: #fff;
 	text-decoration: none;
-	font-weight: bold;
+	transform: translateY(0.6rem);
+	margin-bottom: 10px;
 }
 
 .cta-button:hover {
@@ -112,7 +114,6 @@
 .product-card:hover {
 	transform: translateY(-5px);
 	box-shadow: 1px 2px 10px 3px #ADFF30;
-
 }
 
 .product-card .cart {
@@ -122,10 +123,9 @@
 	width: 28px;
 	height: 28px;
 	border-radius: 10px;
-	background: rgb(4, 244, 32);
-	color: rgb(25, 7, 7);
+	background: #08f420;
+	color: #190707;
 	display: grid;
-	align-items: center;
-	justify-content: center;
+	place-items: center;
 	font-size: 15px;
 }

@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-padding-top: 20px;
+    padding-top: 20px;
     background-color: #43395f;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,7 +10,7 @@ padding-top: 20px;
 .contact article {
 
     flex-basis: calc(33% - 20px);
-   
+
 }
 
 .contact h3 {
@@ -19,16 +19,18 @@ padding-top: 20px;
     margin-bottom: 10px;
 }
 
-.contact address  {
+.contact address {
     color: #b6acac;
     font-size: 1em;
     line-height: 1.5;
 }
-.details a{
+
+.details a {
     color: #b6acac;
     font-size: 1em;
     line-height: 1.5;
 }
+
 .box__redes {
     display: flex;
     flex-direction: column;
@@ -45,25 +47,28 @@ padding-top: 20px;
     background-color: rgba(250, 250, 250, 0.971);
     border-radius: 40px;
     width: 3rem;
+    transition: all ease .5s;
     height: 3rem;
 }
+
 .contact .redes div:hover {
     box-shadow: 1px 1px 10px 3px #0fdb64;
-	transform: scale(1.09);
-	transition: ease-in .2s;
+    transform: scale(1.09);
 }
 
 .gg-facebook:hover {
     color: #000dff;
-	text-decoration: none;
+    text-decoration: none;
 }
+
 .gg-youtube:hover {
     color: #ff0000;
-	text-decoration: none;
+    text-decoration: none;
 }
+
 .gg-instagram:hover {
     color: #d400ff;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .footer {
@@ -71,23 +76,20 @@ padding-top: 20px;
     padding: .5em;
 }
 
-.box__redes:hover {
-    
-    
-}
+.box__redes:hover {}
 
 @media(max-width: 476px) {
     .contact {
         display: flex;
         flex-direction: column;
-        
+
     }
-    
+
     .contact h3,
     p {
         font-size: 1rem;
     }
-    
+
     .box__redes {
         display: flex;
         flex-direction: row;

@@ -4,7 +4,7 @@
 
 .btn__burguer {
     display: none;
-    
+
 }
 
 .btn__burguer::before,
@@ -15,7 +15,7 @@
     height: 0.6rem;
     background-color: #fff;
     border-radius: 0.3rem;
-    transition: transform 00ms ease;
+    transition: transform 0s ease;
 }
 
 .btn__burguer::before {
@@ -26,15 +26,15 @@
     transform: rotate(0deg) translate(0, 0.3rem);
 }
 
-.btn__menu:checked + .btn__burguer {
+.btn__menu:checked+.btn__burguer {
     background-color: transparent;
 }
 
-.btn__menu:checked + .btn__burguer::before {
+.btn__menu:checked+.btn__burguer::before {
     transform: rotate(45deg) translate(0, 0);
 }
 
-.btn__menu:checked + .btn__burguer::after {
+.btn__menu:checked+.btn__burguer::after {
     transform: rotate(-45deg) translate(0.5rem, -0.4rem)
 }
 
@@ -58,7 +58,7 @@
     transition: transform 200ms ease-in-out;
 }
 
-.btn__menu:checked ~ .navbar {
+.btn__menu:checked~.navbar {
     transform: translate(0, 0);
 }
 
@@ -78,7 +78,7 @@
     border-left: 5px solid greenyellow;
     text-decoration: none;
     font-size: 1rem;
-    color: #ffffff;
+    color: #9a8bd9;
     transition: ease-in 0.2s;
 }
 
@@ -92,10 +92,22 @@
     transform: translateX(5px);
 }
 
+.additional-links a {
+    color: #fafafa;
+    border-radius: 20px;
+    transition: all 500ms ease;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+    transform: translateY(-5px);
+    color: #0bed0b;
+
+}
 
 @media (max-width: 768px) {
     .btn__menu {
-        display: block; /* Muestra el botón de menú */
+        display: block;
         position: fixed;
         width: 3rem;
         height: 3rem;
@@ -105,17 +117,22 @@
         left: 1rem;
         top: 1rem;
     }
+
     .btn__burguer {
         display: block;
         position: fixed;
-    width: 3rem;
-    height: 0.6rem;
-    background-color: #fff;
-    left: 1rem;
-    top: 3.5rem;
-    z-index: 998;
-    border-radius: 0.3rem;
-    transform: rotate(0deg) translate(0, -1.2rem);
-    transition: transform 100ms ease;
+        width: 3rem;
+        height: 0.6rem;
+        background-color: #fff;
+        left: 1rem;
+        top: 3.5rem;
+        z-index: 998;
+        border-radius: 0.3rem;
+        transform: rotate(0deg) translate(0, -1.2rem);
+        transition: transform 100ms ease;
+    }
+
+    .additional-links {
+        display: none;
     }
 }

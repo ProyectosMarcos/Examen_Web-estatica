@@ -1,236 +1,241 @@
-
 .main {
-    background-color: #143643;
+  background-color: #143643;
 }
 
 .footer {
-    background-color: greenyellow;
-    color: #000000;
+  background-color: greenyellow;
+  color: #000000;
 }
 
 
 
 .header {
-    background-color: #000000;
-    position: fixed;
-    display: flex;
-    height: 100px;
-    align-items: center;
-    z-index: 99;
-    justify-content: space-between;
-    align-content: stretch;
-    flex-direction: row;
-    align-items: center;
+  background-color: #000000;
+  position: fixed;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  z-index: 99;
+  justify-content: space-between;
+  align-content: stretch;
+  flex-direction: row;
+  align-items: center;
 }
 
 .shop h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 
 .shop h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
+
 .logo {
-    display: flex;
- 
+  display: flex;
 
-    background-color: #000000;
+
+  background-color: #000000;
 }
+
 .logo img {
-    height: 6rem;
+  height: 6rem;
 }
 
 .whatsapp {
-    position: fixed;
-    bottom: 1.5em;
-    z-index: 99999;
-    right: 1em;
+  position: fixed;
+  bottom: 1.5em;
+  z-index: 99999;
+  right: 1em;
 }
 
 .whatsapp img {
-    width: 5rem;
-    height: 5rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .hotsale {
-    position: fixed;
-    z-index: 99999;
-    bottom: 6.5em;
-    right: 1em;
+  position: fixed;
+  z-index: 99999;
+  bottom: 6.5em;
+  right: 1em;
 }
 
 .hotsale img {
-    width: 5rem;
+  width: 5rem;
 }
 
-/* Estilos para los enlaces adicionales */
 .additional-links {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
-  
-  .additional-link {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-  }
-  
-  .additional-link:not(:last-child) {
-    margin-right: 20px;
-  }
-  
-  header {
-	background-color: #000000;
-	position: fixed;
-	display: flex;
-	width: 100%;
-	z-index: 99;
-	flex-direction: row;
-	justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.additional-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.additional-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+header {
+  background-color: #000000;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 99;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .header .gg-shopping-cart,
 .gg-user,
 .gg-log-in {
-	color: #fafafa;
+  color: #dd03ff;
 }
 
 .header h5 {
 
-	color: #fafafa;
-	font-size: 1em;
+  color: #fafafa;
+  font-size: 1em;
 }
 
 .product-card .gg-shopping-cart {
-	color: #000000;
+  color: #000000;
 }
 
 .header .header-buttons {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
 }
 
 .shop h1 span {
-	color: #ADFF30;
+  color: #ADFF30;
 }
 
 .main {
-	background-color: #4f1bde15;
+  background-color: #4f1bde15;
 }
 
 .container__brands {
-	background-color: #fafafa;
-	display: flex;
-	margin-top: 1em;
-	width: 100%;
+  background-color: #fafafa;
+  display: flex;
+  margin-top: 1em;
+  width: 100%;
 }
 
 .container__brands img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
+.brands article {
+  transition: all .5s ease;
+}
 
 .brands article:hover {
-	transform: translateY(-15px);
-	transition: ease 1s;
-}
-
-.header-buttons {
-	display: flex;
-	justify-content: space-between;
-	transform: translateX(-6em);
-}
-
-.header-buttons h5 {
-	margin-top: 5px;
-}
-
-.header-buttons a {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
+  transition: ease-out 500ms;
+  transform: translateY(-10px);
 }
 
 .header-buttons {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos uniformemente */
-  align-items: center; /* Alinea verticalmente los elementos */
-  flex-wrap: nowrap; /* Evita que los elementos se envuelvan en pantallas pequeñas */
-}
-
-.header-buttons > div {
-  flex: 1; /* Ocupa todo el espacio disponible */
-  text-align: center; /* Centra el contenido horizontalmente */
-  padding: 0 10px; /* Añade espaciado horizontal entre los elementos */
+  justify-content: space-between;
+  transform: translateX(-6em);
 }
 
 .header-buttons h5 {
-  margin: 5px 0; /* Ajusta el margen del texto */
+  margin-top: 5px;
+}
+
+.header-buttons a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header-buttons div {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.header-buttons h5 {
+  margin: 5px 0;
+  transition: all 500ms ease-in-out;
+
+}
+
+.header-buttons a i {
+  color: #0bed0b;
+  font-size: 1.5em;
 }
 
 .header-buttons a {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra el contenido verticalmente */
+  align-items: center;
   text-decoration: none;
-  color: #fff; /* Color del texto */
+  color: #f0f2f0;
 }
 
-.header-buttons a:hover {
-  color: #ADFF30; /* Cambia el color del texto al pasar el ratón */
+.header-buttons h5:hover {
+  transition: all 500ms ease;
+  color: #0bed0b;
+  text-decoration: underline;
+  transform: translateY(-5px);
 }
 
-.header-buttons a i {
-  font-size: 1.5em; /* Tamaño de los iconos */
-}
-  /* Media query para ocultar los enlaces en pantallas pequeñas */
-  @media screen and (max-width: 768px) {
-    .additional-links {
-      display: none; /* Oculta los enlaces en pantallas pequeñas */
-    }
+
+
+
+
+@media (max-width: 468px) {
+  .header-buttons {
+    display: flex;
+    justify-content: end;
+
   }
- 
-  
-  @media (max-width: 468px) {
-      .header-buttons {
-          display: flex;
-      justify-content: end;
-      
-    }
-    .header-buttons div:nth-child(1) {
-        display: none; /* Oculta el botón de Registro */
-    }
-    .header-buttons div:nth-child(3) {
-        
-    }
-    .logo{
-        display: inline-block;
-        padding-right: 6em;
-        margin-right: 1em;
-        padding-left: 4em;
-    }
-}
 
+  .header-buttons div:nth-child(1) {
+    display: none;
+  }
+
+  .header-buttons div:nth-child(3) {}
+
+  .logo {
+    display: inline-block;
+    padding-right: 6em;
+    margin-right: 1em;
+    padding-left: 4em;
+  }
+}
 
 @media(width > 468px) {
 
-    .logo {
-        display: inline-block;
-      padding-right: 4em;
-        background-color: #000000;
-        display: inline-block;
-        padding-right: 6em;
-        margin-right: 1em;
-        padding-left: 6em;
-    } 
+  .logo {
+    display: inline-block;
+    padding-right: 4em;
+    background-color: #000000;
+    display: inline-block;
+    padding-right: 6em;
+    margin-right: 1em;
+    padding-left: 6em;
+  }
 }

@@ -53,7 +53,7 @@
     bottom: 10px;
     left: 0;
     color: #150b0b;
-   
+
     width: 100%;
     margin: 0;
     padding: 0;
@@ -65,7 +65,7 @@
     list-style: none;
     width: 10px;
     height: 10px;
-   
+
     background-color: #1cce39;
     margin: 10px;
     border-radius: 20px;
@@ -74,7 +74,7 @@
 
 .slider .dots li.active {
     width: 30px;
-  
+
 }
 
 .buttons {
@@ -93,12 +93,12 @@
         height: 40px;
     }
 
-    
+
 }
 
 @media (max-width: 768px) {
     .slider {
-      
+
         height: 13rem;
     }
 
@@ -118,13 +118,15 @@
         width: 40px;
         height: 40px;
     }
+
     .slider .dots li {
         width: 5px;
         height: 5px;
     }
+
     .slider .dots li.active {
         width: 13px;
-      
+
     }
 }
 
@@ -133,6 +135,7 @@
         padding-top: 100px;
         height: 3pc;
     }
+
     .slider .buttons button {
         width: 40px;
         height: 40px;
