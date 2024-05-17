@@ -245,13 +245,13 @@
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        gap: 1em;
+        justify-content: space-evenly;
         color: #fff;
     }
 
     .header .navbar__links {
-        color: #fff
+        color: #fff;
+        font-size: 1.1rem;
     }
 
     .navbar {
@@ -264,7 +264,7 @@
         display: flex;
         list-style-type: none;
         position: relative;
-        gap: 1.3em;
+        gap: 1em;
     }
 
     .navbar__items {
@@ -295,7 +295,7 @@
     }
 
     .submenu__links:hover {
-        background-color: #54aaab;
+        background-color: rgba(55, 237, 191, 0.976);
 
     }
 

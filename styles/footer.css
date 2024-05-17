@@ -3,7 +3,7 @@
     justify-content: space-around;
     gap: .2em;
     padding: .5em;
-    background-color: #0a111394;
+    background-color: #f3f3f3;
 }
 
 .contact article {
@@ -12,11 +12,11 @@
 }
 
 .contact article h4 {
-    color: #ffffff;
+    color: #111111;
 }
 
 .contact article address {
-    color: #ffffff;
+    color: #111111;
     font-weight: bold;
     text-wrap: wrap;
 }
@@ -37,7 +37,7 @@
         text-align: center;
         gap: .2em;
         padding: .5em;
-        background-color: #0a111394;
+        background-color: #f3f3f3;
     }
 
     .contact h4,
@@ -58,7 +58,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(115, 224, 226, 0.971);
+    background-color: rgba(55, 237, 191, 0.976);
     border-radius: .5rem;
     margin: 0 auto;
     width: 2rem;

@@ -1,7 +1,22 @@
+.products {
+    background-color: rgba(37, 37, 37, 0.765);
+    padding: .5em;
+}
+
 .products h2 {
-    color: #fff;
-    text-decoration: underline;
     margin-left: 1em;
+    color: #f3f3f3;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.title h1 {
+    background-color: #f3f3f3;
+    color: #141313;
+    display: inline-block;
+    margin-left: 1em;
+    text-align: center;
+    width: auto;
 }
 
 .container__products {
@@ -22,7 +37,6 @@
         width: 100%;
         height: auto;
         flex-wrap: wrap;
-
         justify-content: center;
     }
 }
