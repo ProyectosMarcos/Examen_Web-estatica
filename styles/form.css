@@ -24,9 +24,8 @@
 form {
     padding: 1.1em;
     width: 100%;
-    background-color: rgba(203, 203, 203, 0.813);
+    background-color: rgba(247, 245, 245, 0.527);
     position: relative;
-
 }
 
 label {
@@ -46,6 +45,7 @@ input[type="password"]::placeholder,
 input[type="text"]::placeholder,
 input[type="number"]::placeholder {
     color: #080808;
+    font-weight: bold;
 }
 
 /* valid form */

@@ -3,7 +3,7 @@
     justify-content: space-around;
     gap: .2em;
     padding: .5em;
-    background-color: #f3f3f3;
+    background-color: #eeeded96;
 }
 
 .contact article {
@@ -39,7 +39,7 @@
         text-align: center;
         gap: .2em;
         padding: .5em;
-        background-color: #f3f3f3;
+         background-color: #eeeded96;
     }
 
     .contact h4,
