@@ -31,6 +31,10 @@
     padding: .5em;
 }
 
+figcaption p {
+    color: #fff;
+}
+
 @media(max-width: 931px) {
 
     .container__products {
